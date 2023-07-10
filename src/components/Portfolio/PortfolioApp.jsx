@@ -16,7 +16,8 @@ export default function PortfolioApp() {
   }
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
+    <div  className={`${darkMode ? "dark" : ""} appContainer`}>
+    <div className="max-w-screen-2xl mx-auto">
       <NavFooter  toggleDarkMode={toggleDarkMode}>
         <div className="wrapper">
           <Header />
@@ -25,6 +26,7 @@ export default function PortfolioApp() {
           <Projects darkMode={darkMode} />
         </div>
       </NavFooter>
+    </div>
     </div>
   );
 }
