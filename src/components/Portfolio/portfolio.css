@@ -1,0 +1,373 @@
+:root {
+  /*! Nav/Header */
+  --nav-bg: #f8f3f1;
+  --main-bg: #f8f3f1;
+  --text-color: #2b283a;
+  --toggler-bg: #2b283a;
+  --toggler-slider-circle-bg: #f8f3f1;
+  --toggler-position: flex-start;
+  --toggler-border-color: #1e1f26;
+  --active-list: #fff;
+  --toggle-bg: #f5f5f5;
+  --toggle-ball: #1a1b21;
+  --button-border: none;
+  --footer-bg: #e5e5e5;
+  --btn-bg: #000;
+  --btn-hover: #000;
+  --btn-color: #fff;
+  --gradient-bg: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+
+.dark {
+  --nav-bg: #1e1f26;
+  --main-bg: #1e1f26;
+  --text-color: #fff;
+  --toggler-slider-circle-bg: #1e1f26;
+  --toggler-position: flex-end;
+  --toggler-border-color: #f8f3f1;
+  --toggler-bg: #f8f3f1;
+  --active-list: #2b283a;
+  --header-color: #2b283a;
+  --footer-bg: #1e1f26;
+  --toggle-bg: #1a1b21;
+  --toggle-ball: #f5f5f5;
+  --button-border: 1px solid #d1d5db;
+  --btn-bg: #fff;
+  --btn-color: #000;
+  --btn-hover: #fff;
+  --gradient-bg: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+
+/* ------------------ */
+/* General */
+/* ------------------ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  max-width: 100%;
+  min-width: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+li,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.gradient {
+  background: var(--gradient-bg);
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------ */
+/* wrapper */
+/* ------------------ */
+
+.wrapper {
+  padding: 0 62px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  height: auto;
+}
+/* NAV styles */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-bg);
+  padding: 30px 25px;
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  color: var(--text-color);
+  position: relative;
+}
+
+.nav--logo_icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.nav--logo_text {
+  color: #61dafb;
+}
+
+.neg {
+  margin-left: -8px;
+}
+
+.nav--title {
+  color: #deebf8;
+}
+
+.links-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mainlist,
+.menulist {
+  display: flex;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.menulist {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--nav-bg);
+  padding: 40px 0;
+  width: 50vw;
+  height: 100vh;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9000;
+  z-index: 1500;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.menubtn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 1px solid var(--main-bg);
+  border-radius: 50%;
+}
+
+.menuIcon {
+  color: var(--text-color);
+}
+
+.display {
+  display: none;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: var(--toggler-bg);
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: var(--toggler-position);
+  align-items: center;
+  border: 1px solid var(--toggler-border-color);
+  box-sizing: content-box;
+  transition: justify-content ease-in-out 0.2s;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: var(--toggler-slider-circle-bg);
+  border-radius: 50%;
+}
+
+.hero {
+  height: calc(100vh - 60px);
+  position: relative;
+}
+
+.hero h1 {
+  /* transform: translateY(-50%); */
+}
+
+.download {
+  border: 3px solid #ae67fa;
+}
+
+/* MAIN styles */
+main {
+  padding: 57px 27px;
+  background-image: url("./images/react-icon-light.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  flex: 1 1 auto;
+}
+
+.main--facts {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
+
+/* !BUTTON */
+.btn {
+  margin: 0.5em;
+  color: var(--btn-color);
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.buttons button:hover {
+  color: black;
+}
+
+.buttons button:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.buttons button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer {
+  background-color: var(--nav-bg);
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .nav--logo_text {
+    font-size: 28px;
+  }
+
+  .menubtn {
+    display: flex;
+    align-items: center;
+  }
+
+  .menulist {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mainlist {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 10px 30px;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-6-18 22:37:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
