@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex content-center hero">
+    <div className="flex content-center hero" id="home">
       <div className="my-auto">
         <div className="hero-content flex flex-col gap-2">
           <div className="gradient h-1 w-20"></div>
@@ -20,7 +20,7 @@ const Header = () => {
             <button className="mt-7" type="button">
               <a
                 href=""
-                className="download text-md font-semibold py-2 px-6 rounded-full"
+                className="download text-md font-semibold py-2 px-6"
               >
                 Resume
               </a>

@@ -12,7 +12,7 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
 
   //! Nav Items
   const navItems = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
@@ -24,14 +24,8 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
 
   //! Map
   const navItem = navItems.map((item, index) => (
-    <li
-      key={index}
-      onClick={() => {
-        navigate(item.link);
-      }}
-      className="font-semibold text-lg" 
-    >
-      {item.name}
+    <li key={index} onClick={() => {}} className="font-semibold text-lg">
+      <a href={item.link}>{item.name}</a>
     </li>
   ));
 
@@ -40,9 +34,12 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
   }
 
   return (
-    <header>
-      <nav className="nav">
-        <h3 className="nav--logo_text gradient-text text-4xl font-semibold mr-auto" onClick={() => navigate("/")}>
+    <header className="w-full">
+      <nav className="nav max-w-screen-2xl mx-auto">
+        <h3
+          className="nav--logo_text gradient-text text-4xl font-semibold mr-auto"
+          onClick={() => navigate("/")}
+        >
           M<span className="neg">G</span>
         </h3>
 

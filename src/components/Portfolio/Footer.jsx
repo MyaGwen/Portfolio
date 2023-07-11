@@ -1,9 +1,15 @@
 import React from "react";
 
-const Footer = ({darkMode}) => {
+const Footer = ({ darkMode }) => {
   return (
-    <footer className="py-3 px-16 flex content-center justify-center">
-      <p>Made with ❤️ by Mya</p>
+    <footer
+      className={`
+      ${darkMode ? "text-white bg-gray-800" : "text-black bg-gray-200"}
+      py-3 px-16 flex content-center justify-center`}
+    >
+      <div className="footer max-w-screen-2xl mx-auto">
+        <p>Made with ❤️ by Mya</p>
+      </div>
     </footer>
   );
 };

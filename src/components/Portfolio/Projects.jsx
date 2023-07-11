@@ -42,10 +42,10 @@ export default function Projects({ darkMode, showBtn }) {
   ));
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" id="projects">
       <div className="title">
-        <div className="gradient h-1 w-14 bg-black"></div>
-        <h1 className="main--title ">Recent Projects</h1>
+      <div className="gradient h-1 w-20 mb-2"></div>
+          <h2 className="text-4xl md:text-5xl font-semibold mb-3">Recent Projects</h2>
       </div>
       <div className="projectContainer pt-3 pb-6">{recentProject}</div>
 

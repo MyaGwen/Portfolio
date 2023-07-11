@@ -17,8 +17,8 @@ const AllProjects = () => {
     <div className={`${darkMode ? "dark" : ""}`}>
       <NavFooter toggleDarkMode={toggleDarkMode}>
         <div className="wrapper  pt-3 pb-6 px-6 flex flex-col">
-          <h1 className="capitalize text-center text-2xl mb-4 md:text-3xl lg:text-5xl">
-            a breakdown of all my projects
+          <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 md:text-3xl lg:text-5xl">
+            All my projects
           </h1>
           <HtmlCssProjects  darkMode={darkMode}/>
         </div>
