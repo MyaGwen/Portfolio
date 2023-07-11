@@ -17,7 +17,7 @@ const Header = () => {
               </span>{" "}
               I build beautiful, functional and responsive websites.
             </h1>
-            <button className="mt-7" type="button">
+            <button className="mt-9" type="button">
               <a
                 href=""
                 className="download text-md font-semibold py-2 px-6"
