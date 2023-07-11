@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-const NavFooter = ({ children, toggleDarkMode }) => {
+const NavFooter = ({ children, toggleDarkMode, darkMode }) => {
  
   return (
     <div>
       <Navbar toggleDarkMode={toggleDarkMode} />
       {children}
-      <Footer />
+      <Footer darkMode={darkMode}/>
     </div>
   );
 };

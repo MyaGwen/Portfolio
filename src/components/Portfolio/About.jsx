@@ -1,17 +1,15 @@
 import React from "react";
 import cv from "../../assets/cv.pdf";
-import AboutMe from "../../assets/images/aboutMe.png";
+import AboutMe from "../../assets/images/mee.png";
 
 const About = () => {
   return (
     <div className="" id="about">
-      <div className="flex flex-col gap-9 md:flex-row md:content-center">
+      <div className="flex flex-col-reverse gap-9 md:flex-row md:content-center">
         {/* <a href={cv} target="_blank" download>
         <button>download</button>
        </a> */}
-        <div className="justify-self-start w-full">
-          <img src={AboutMe} alt="AboutMe" />
-        </div>
+       
         <div className="self-center flex flex-col gap-2 w-full">
           <div className="gradient h-1 w-20"></div>
           <h2 className="text-4xl md:text-5xl font-semibold mb-3">About Me</h2>
@@ -30,6 +28,9 @@ const About = () => {
             exceptional designs into intuitive and meaningful experiences that
             are both simple and user-friendly. 
           </p>
+        </div>
+        <div className="w-full flex justify-end">
+          <img src={AboutMe} alt="AboutMe" />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMe from "../../assets/images/aboutMe.png";
+import skills from "../../assets/images/skills.png";
 
 const Skills = () => {
   return (
@@ -8,6 +8,9 @@ const Skills = () => {
         {/* <a href={cv} target="_blank" download>
       <button>download</button>
     </a> */}
+        <div className="w-full flex justify-start">
+          <img src={skills} alt="AboutMe" />
+        </div>
         <div className="self-center  flex flex-col gap-2 w-full">
           <div className="gradient h-1 w-20"></div>
           <h2 className="text-4xl md:text-5xl font-semibold mb-3">Skills and Tools</h2>
@@ -19,9 +22,6 @@ const Skills = () => {
             <li>HTMl</li>
             
           </ul>
-        </div>
-        <div className="w-full flex justify-end">
-          <img src={AboutMe} alt="AboutMe" />
         </div>
       </div>
     </div>

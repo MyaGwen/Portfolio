@@ -44,17 +44,19 @@ export default function Projects({ darkMode, showBtn }) {
   return (
     <div className="flex flex-col" id="projects">
       <div className="title">
-      <div className="gradient h-1 w-20 mb-2"></div>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-3">Recent Projects</h2>
+        <div className="gradient h-1 w-20 mb-2"></div>
+        <h2 className="text-4xl md:text-5xl font-semibold mb-3">
+          Recent Projects
+        </h2>
       </div>
       <div className="projectContainer pt-3 pb-6">{recentProject}</div>
 
       <button
-        className={
+        className={`${
           darkMode
             ? "capitalize text-center btn text-white bg-gray-800 w-full md:w-fit text-md font-bold py-2 px-3 self-center"
             : "capitalize text-center btn text-black bg-gray-200 w-full md:w-fit text-md font-bold py-2 px-3 self-center"
-        }
+        }`}
         onClick={() => navigate("/allProjects")}
       >
         view all projects
