@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-dark-500 py-12 flex justify-center" id="contact">
+    <div className="bg-dark-500 py-12 flex justify-center section-padding" id="contact">
       <div className="flex flex-col max-w-md content-center gap-5">
         <div className="">
           <Title title={"Send me a message"} />
