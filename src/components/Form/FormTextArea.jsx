@@ -10,7 +10,7 @@ export default function FormTextArea({ label, name, ...rest }){
 
     return (
         <FormControl isInvalid={Boolean(error)}>
-            <FormLabel>{label}</FormLabel>
+            <FormLabel m={0}>{label}</FormLabel>
             <Textarea isDisabled={isSubmitting} {...register(name)} {...rest}  focusBorderColor="none" borderColor='rgb(203, 203, 203)' />
             <FormErrorMessage m={0} fontStyle='italic'>{error}</FormErrorMessage>
         </FormControl>
