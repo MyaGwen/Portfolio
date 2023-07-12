@@ -1,5 +1,4 @@
 import React from "react";
-import cv from "../../assets/cv.pdf";
 import AboutMe from "../../assets/images/mee.png";
 import SectionDivider from "../SectionDivider";
 import Title from "../Title";
@@ -15,9 +14,6 @@ const About = ({ darkMode }) => {
       id="about"
     >
       <div className="flex flex-col-reverse gap-9 md:flex-row md:content-center">
-        {/* <a href={cv} target="_blank" download>
-        <button>download</button>
-       </a> */}
 
         <div className="self-center flex flex-col gap-2 w-full">
           <Title title={"About Me"} />

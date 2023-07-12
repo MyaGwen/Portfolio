@@ -1,5 +1,6 @@
 import React from "react";
 import SectionDivider from "../SectionDivider";
+import cv from "../../assets/cv.pdf";
 
 const Header = () => {
   return (
@@ -21,7 +22,9 @@ const Header = () => {
             </h1>
             <button className="mt-9" type="button">
               <a
-                href=""
+                href={cv}
+                target="_blank"
+                download
                 className="download text-lg font-semibold py-2 px-6 gradient-bar"
               >
                 Resume
