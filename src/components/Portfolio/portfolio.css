@@ -20,8 +20,8 @@
 }
 
 .dark {
-  --nav-bg: #1e1f26;
-  --main-bg: #1e1f26;
+  --nav-bg: #0d121e;
+  --main-bg: #0d121e;
   --text-color: #fff;
   --toggler-slider-circle-bg: #1e1f26;
   --toggler-position: flex-end;
@@ -241,6 +241,17 @@ nav {
 }
 
 .download {
+  border: 3px solid #ae67fa;
+  border-radius: 50px;
+}
+
+.code{
+  border: 3px solid #ae67fa;
+  border-radius: 50px;
+}
+
+.preview{
+  background: #ae67fa;
   border: 3px solid #ae67fa;
   border-radius: 50px;
 }

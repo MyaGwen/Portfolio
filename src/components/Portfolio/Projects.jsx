@@ -80,7 +80,7 @@ export default function Projects({ darkMode, showBtn }) {
         </div>
       </div>
       <div className="projectContainer pt-3 pb-6">{recentProject}</div>
-      <button onClick={() => navigate("/allProjects")} className="btn md:hidden self-center text-sm font-bold py-2 px-12 w-full md:w-fit">
+      <button onClick={() => navigate("/allProjects")} className="btn md:hidden self-center text-sm font-bold py-3 px-12 w-full md:w-fit">
         {" "}
         All projects
       </button>

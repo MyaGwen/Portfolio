@@ -28,7 +28,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-dark-500 py-12 flex justify-center section-padding" id="contact">
+    <div
+      className="bg-dark-500 py-12 flex justify-center section-padding"
+      id="contact"
+    >
       <div className="flex flex-col max-w-md content-center gap-5">
         <div className="">
           <Title title={"Send me a message"} />
@@ -63,9 +66,11 @@ const ContactForm = () => {
           </FormProvider>
         </div>
         <div className="socials flex justify-center gap-5">
-          <AiFillGithub size={30}/>
-          <AiFillLinkedin size={30}/>
-          <AiOutlineTwitter size={30}/>
+          <a href="https://github.com/MyaGwen" target="_blank">
+            <AiFillGithub size={30} />
+          </a>
+          <AiFillLinkedin size={30} />
+          <AiOutlineTwitter size={30} />
         </div>
       </div>
     </div>
