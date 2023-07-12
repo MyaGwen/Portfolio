@@ -5,8 +5,8 @@ const Footer = ({ darkMode }) => {
     <footer
       className={
         darkMode
-          ? "text-white bg-gray-800 py-3 px-16 flex content-center justify-center"
-          : "text-black bg-gray-200 py-3 px-16 flex content-center justify-center"
+          ? "py-3 px-16 flex content-center justify-center"
+          : "py-3 px-16 flex content-center justify-center"
       }
     >
       <div className="footer max-w-screen-2xl mx-auto">

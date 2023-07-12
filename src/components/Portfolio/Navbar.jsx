@@ -40,7 +40,7 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
           className="nav--logo_text gradient-text text-4xl font-semibold mr-auto"
           onClick={() => navigate("/")}
         >
-          M<span className="neg">G</span>
+          M<span className="-ml-2">G</span>
         </h3>
 
         <div className="links-toggle">

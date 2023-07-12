@@ -1,36 +1,49 @@
 import React from "react";
 import cv from "../../assets/cv.pdf";
 import AboutMe from "../../assets/images/mee.png";
+import SectionDivider from "../SectionDivider";
+import Title from "../Title";
 
-const About = () => {
+const About = ({ darkMode }) => {
   return (
-    <div className="" id="about">
+    <div
+      className={
+        darkMode
+          ? "section-padding py-12 shadow bg-gray-900"
+          : "section-padding py-12 shadow bg-gray-100"
+      }
+      id="about"
+    >
       <div className="flex flex-col-reverse gap-9 md:flex-row md:content-center">
         {/* <a href={cv} target="_blank" download>
         <button>download</button>
        </a> */}
-       
+
         <div className="self-center flex flex-col gap-2 w-full">
-          <div className="gradient h-1 w-20"></div>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-3">About Me</h2>
+          <Title title={"About Me"} />
           <p>
-            I'm Wendy Edem Ahadome, a Frontend Developer from Accra, Ghana.
-            Although I studied political science in college, I discovered my
-            true passion for frontend development after completing my national
-            service. Since then, I have been on a journey of continuous learning
-            and gaining hands-on experience in various programming languages and
-            frameworks. <br /> <br /> As a lifelong learner, I thrive on expanding my
-            knowledge and skills in the field. Working in collaborative teams
-            has provided me with valuable experience and honed my ability to
-            work effectively with others. <br /> My primary focus is on building
-            functional and visually appealing interfaces that have a positive
-            impact on users and businesses. I am committed to transforming
-            exceptional designs into intuitive and meaningful experiences that
-            are both simple and user-friendly. 
+            I'm{" "}
+            <span className="gradient-text font-semibold">
+              Wendy Edem Ahadome
+            </span>
+            , a Frontend Developer from Accra, Ghana. Although I studied
+            political science in college, I discovered my true passion for
+            frontend development after completing my national service. Since
+            then, I have been on a journey of continuous learning and gaining
+            hands-on experience in various programming languages and frameworks.{" "}
+            <br /> <br /> My primary focus is on building functional and
+            visually appealing interfaces that have a positive impact on users
+            and businesses. I am committed to transforming exceptional designs
+            into intuitive and meaningful experiences that are both simple and
+            user-friendly.
           </p>
         </div>
-        <div className="w-full flex justify-end">
-          <img src={AboutMe} alt="AboutMe" />
+        <div className="w-full flex justify-center md:justify-end content-center">
+          <img
+            src={AboutMe}
+            alt="AboutMe"
+            className="self-center h-3/4 max-w-xs md:max-w-full"
+          />
         </div>
       </div>
     </div>

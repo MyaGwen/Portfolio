@@ -1,29 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import Projects from "../Projects";
-import HtmlCssProjects from "./HtmlCssProjects";
+import HtmlCssProjects from "./HtmlCss/HtmlCssProjects";
 import Navbar from "../Navbar";
 import NavFooter from "../NavFooter";
 
 const AllProjects = () => {
-  const projectPage = true;
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    const savedColorMode = localStorage.getItem("colorMode");
+    if (savedColorMode) {
+      setDarkMode(savedColorMode === "dark");
+    }
+  }, []);
+
   function toggleDarkMode() {
-    setDarkMode(!darkMode);
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem("colorMode", newDarkMode ? "dark" : "light");
   }
-  
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
-      <NavFooter toggleDarkMode={toggleDarkMode}>
+    <NavFooter toggleDarkMode={toggleDarkMode}>
+      <div className={`${darkMode ? "dark" : ""} py-6`}>
         <div className="wrapper  pt-3 pb-6 px-6 flex flex-col">
           <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 md:text-3xl lg:text-5xl">
-            All my projects
+            my projects
           </h1>
-          <HtmlCssProjects  darkMode={darkMode}/>
+          <HtmlCssProjects darkMode={darkMode} />
         </div>
-      </NavFooter>
-    </div>
+      </div>
+    </NavFooter>
   );
 };
 

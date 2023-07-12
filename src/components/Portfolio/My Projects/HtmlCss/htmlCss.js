@@ -1,4 +1,4 @@
-export const recentProjects = [
+export const htmlCss = [
   {
     image: "/src/assets/images/gamevault.png",
     title: "Game vault",

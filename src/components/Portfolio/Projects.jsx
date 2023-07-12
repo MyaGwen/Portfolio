@@ -1,39 +1,56 @@
 import React, { useState } from "react";
 import { recentProjects } from "./recentProjects";
 import { useNavigate } from "react-router-dom";
-
+import SectionDivider from "../SectionDivider";
+import Title from "../Title";
+import { BsArrowRight } from "react-icons/bs";
 export default function Projects({ darkMode, showBtn }) {
   const navigate = useNavigate();
   const recentProject = recentProjects.map((item) => (
     <div
       className={
         darkMode
-          ? "card bg-gray-800 flex flex-col justify-center rounded shadow text-white"
-          : "card bg-gray-100 flex flex-col justify-center rounded shadow text-black"
+          ? "card flex flex-col justify-center rounded shadow text-white"
+          : "card flex flex-col justify-center rounded shadow text-black"
       }
       key={item.id}
     >
       <img className="rounded-t self-start" src={item.image} alt={item.title} />
-      <div className="flex flex-col justify-center p-4">
+      <div
+        className={
+          darkMode
+            ? "card bg-gray-800 text-sm md:text-md rounded-b flex flex-col justify-center p-4"
+            : "card bg-gray-100 text-sm md:text-md rounded-b flex flex-col justify-center p-4"
+        }
+      >
         <div className="title pt-2 pb-2 text-left">
           <span className="font-bold capitalize">title: </span>{" "}
           <span className="capitalize">{item.title}</span>
         </div>
         <div className="tech-stack pb-1">
-          <span className="font-bold capitalize">tech stack: </span>{" "}
-          <span className="uppercase">{item.stack}</span>
+          <span className="font-bold capitalize">stack: </span>{" "}
+          <span className="uppercase">
+            {item.stack}
+            <span className="capitalize">
+              {item.responsive === true ? ", Responsive" : ""}
+            </span>{" "}
+          </span>
+        </div>
+        <div className="title pt-2 pb-2 text-left">
+          <span className="font-bold capitalize">description: </span>{" "}
+          <span className="capitalize">{item.description}</span>
         </div>
         <div className="buttons self-center">
-          <button className="btn text-md font-bold py-2 px-3">
+          <button className="btn text-md font-bold py-2 px-4">
             {" "}
             <a href={item.preview} target="_blank" rel="noopener noreferrer">
-              Live preview
+              Preview
             </a>
           </button>
-          <button className="btn text-md font-bold py-2 px-3">
+          <button className="btn text-md font-bold py-2 px-4">
             {" "}
             <a href={item.code} target="_blank" rel="noopener noreferrer">
-              View code
+              Code
             </a>
           </button>
         </div>
@@ -42,24 +59,30 @@ export default function Projects({ darkMode, showBtn }) {
   ));
 
   return (
-    <div className="flex flex-col" id="projects">
+    <div
+      className={
+        darkMode
+          ? "flex flex-col section-padding py-12 shadow bg-gray-900"
+          : "flex flex-col section-padding py-12 shadow bg-gray-100"
+      }
+      id="projects"
+    >
       <div className="title">
-        <div className="gradient h-1 w-20 mb-2"></div>
-        <h2 className="text-4xl md:text-5xl font-semibold mb-3">
-          Recent Projects
-        </h2>
+        <div className="allP flex justify-between content-center gap-3">
+          <Title title={"Recent Projects"} />
+          <a
+            onClick={() => navigate("/allProjects")}
+            className="hidden self-center capitalize md:flex justify-between content-center gap-3 hover:gap-5 hover:transition-all "
+          >
+            <span className="font-semibold">all projects</span>
+            <BsArrowRight className="self-center" />
+          </a>
+        </div>
       </div>
       <div className="projectContainer pt-3 pb-6">{recentProject}</div>
-
-      <button
-        className={`${
-          darkMode
-            ? "capitalize text-center btn text-white bg-gray-800 w-full md:w-fit text-md font-bold py-2 px-3 self-center"
-            : "capitalize text-center btn text-black bg-gray-200 w-full md:w-fit text-md font-bold py-2 px-3 self-center"
-        }`}
-        onClick={() => navigate("/allProjects")}
-      >
-        view all projects
+      <button onClick={() => navigate("/allProjects")} className="btn md:hidden self-center text-sm font-bold py-2 px-12 w-full md:w-fit">
+        {" "}
+        All projects
       </button>
     </div>
   );
