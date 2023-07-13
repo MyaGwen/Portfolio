@@ -20,8 +20,8 @@ const AllProjects = () => {
 
   return (
     <NavFooter toggleDarkMode={toggleDarkMode}>
-      <div className={`${darkMode ? "dark" : ""} py-6`}>
-        <div className="wrapper  pt-3 pb-6 px-6 flex flex-col">
+      <div className={`${darkMode ? "dark" : ""}`}>
+        <div className="wrapper pt-3 pb-6 flex flex-col">
           <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
             my projects
           </h1>

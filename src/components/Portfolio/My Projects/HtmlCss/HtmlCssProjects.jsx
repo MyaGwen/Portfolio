@@ -55,7 +55,7 @@ const HtmlCssProjects = ({ darkMode }) => {
     </div>
   ));
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col  section-padding">
       <div className="title">
         <SectionDivider />
         <h2 className="text-2xl md:text-3xl font-semibold mb-3">

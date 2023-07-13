@@ -21,7 +21,7 @@ const Header = () => {
               </span>
             </h1>
             <button
-              className="mt-8 text-lg font-semibold py-1 px-4 download"
+              className="mt-6 text-lg font-semibold py-1 px-4 download"
               type="button"
             >
               <a href={cv} target="_blank" download>
