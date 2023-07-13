@@ -11,7 +11,7 @@ const Header = () => {
           {/* <h4 className="text-sm md:text-md lg:text-lg font-semibold">
             Hello,
           </h4> */}
-          <div className="ml-3 pb-2">
+          <div className="ml-3">
             <h1 className="font-semibold  max-w-4xl">
               <span className="gradient-text capitalize text-3xl md:text-6xl lg:text-7xl">
                 Frontend Developer. <br />
@@ -20,7 +20,7 @@ const Header = () => {
                 I build beautiful, functional and responsive interfaces.
               </span>
             </h1>
-            <button className="mt-9" type="button">
+            <button className="mt-16" type="button">
               <a
                 href={cv}
                 target="_blank"
