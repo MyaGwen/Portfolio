@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import Projects from "../Projects";
 import HtmlCssProjects from "./HtmlCss/HtmlCssProjects";
-import Navbar from "../Navbar";
-import NavFooter from "../NavFooter";
+import NavFooter from "../NavFooter/NavFooter";
 
 const AllProjects = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,7 +22,7 @@ const AllProjects = () => {
     <NavFooter toggleDarkMode={toggleDarkMode}>
       <div className={`${darkMode ? "dark" : ""} py-6`}>
         <div className="wrapper  pt-3 pb-6 px-6 flex flex-col">
-          <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 md:text-3xl lg:text-5xl">
+          <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
             my projects
           </h1>
           <HtmlCssProjects darkMode={darkMode} />

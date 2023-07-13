@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar({ toggleDarkMode, projectPage }) {
   //! useStates
@@ -16,7 +16,7 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
-    { name: "Blog", link: "#blog" },
+    // { name: "Blog", link: "#blog" },
     { name: "Contact", link: "#contact" },
   ];
 

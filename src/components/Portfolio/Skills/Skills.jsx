@@ -1,6 +1,6 @@
 import React from "react";
-import skills from "../../assets/images/mee.png";
-import Title from "../Title";
+import skills from "../../../assets/images/mee.png";
+import Title from "../Components/Title";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiVisualstudio } from "react-icons/di";
 import { BsFillBootstrapFill, BsGit, BsGithub } from "react-icons/bs";
@@ -21,15 +21,39 @@ const Skills = () => {
         <div className="self-center w-full md:w-1/2">
           <Title title="Skills" />
           <div className="grid grid-cols-3 gap-4 mt-6">
-            <SkillIcon icon={<AiFillHtml5 size={38} color="#ae67fa" />} label="HTML" />
-            <SkillIcon icon={<IoLogoCss3 size={38} color="#9659d8" />} label="CSS" />
-            <SkillIcon icon={<IoLogoJavascript size={38} color="#9659d8" />} label="Javascript" />
-            <SkillIcon icon={<SiReact size={38} color="#9659d8" />} label="React" />
-            <SkillIcon icon={<SiTailwindcss size={38} color="#9659d8" />} label="Tailwind" />
-            <SkillIcon icon={<BsFillBootstrapFill size={38} color="#9659d8" />} label="Bootstrap" />
+            <SkillIcon
+              icon={<AiFillHtml5 size={38} color="#ae67fa" />}
+              label="HTML"
+            />
+            <SkillIcon
+              icon={<IoLogoCss3 size={38} color="#9659d8" />}
+              label="CSS"
+            />
+            <SkillIcon
+              icon={<IoLogoJavascript size={38} color="#9659d8" />}
+              label="Javascript"
+            />
+            <SkillIcon
+              icon={<SiReact size={38} color="#9659d8" />}
+              label="React"
+            />
+            <SkillIcon
+              icon={<SiTailwindcss size={38} color="#9659d8" />}
+              label="Tailwind"
+            />
+            <SkillIcon
+              icon={<BsFillBootstrapFill size={38} color="#9659d8" />}
+              label="Bootstrap"
+            />
             <SkillIcon icon={<BsGit size={38} color="#9659d8" />} label="Git" />
-            <SkillIcon icon={<BsGithub size={38} color="#9659d8" />} label="Github" />
-            <SkillIcon icon={<DiVisualstudio size={38} color="#9659d8" />} label="Visual Studio" />
+            <SkillIcon
+              icon={<BsGithub size={38} color="#9659d8" />}
+              label="Github"
+            />
+            <SkillIcon
+              icon={<DiVisualstudio size={38} color="#9659d8" />}
+              label="Visual Studio"
+            />
           </div>
         </div>
       </div>

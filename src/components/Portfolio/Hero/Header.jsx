@@ -1,6 +1,6 @@
 import React from "react";
-import SectionDivider from "../SectionDivider";
-import cv from "../../assets/cv.pdf";
+import SectionDivider from "../Components/SectionDivider";
+import cv from "../../../assets/cv.pdf";
 
 const Header = () => {
   return (
@@ -25,7 +25,7 @@ const Header = () => {
                 href={cv}
                 target="_blank"
                 download
-                className="download font-semibold py-2 px-6 gradient-bar"
+                className="download text-lg font-semibold py-2 px-6"
               >
                 Resume
               </a>

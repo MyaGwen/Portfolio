@@ -11,7 +11,7 @@ export default function FormInput({ label, name, placeholder, ...rest }) {
     return (
         <FormControl isInvalid={Boolean(error)}>
             <FormLabel m={0}>{label}</FormLabel>
-            <Input focusBorderColor="none" isDisabled={isSubmitting} {...register(name)} {...rest} placeholder={placeholder} />
+            <Input focusBorderColor="none" borderColor='rgb(203, 203, 203)' isDisabled={isSubmitting} {...register(name)} {...rest} placeholder={placeholder} />
             <FormErrorMessage m={0} fontStyle='italic'>{error}</FormErrorMessage>
         </FormControl>
     )

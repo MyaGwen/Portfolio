@@ -1,20 +1,18 @@
 import React from "react";
-import AboutMe from "../../assets/images/mee.png";
-import SectionDivider from "../SectionDivider";
-import Title from "../Title";
+import AboutMe from "../../../assets/images/mee.png";
+import Title from "../Components/Title";
 
 const About = ({ darkMode }) => {
   return (
     <div
       className={
         darkMode
-          ? "section-padding py-12 shadow bg-gray-900 slide-right"
-          : "section-padding py-12 shadow bg-gray-100 slide-right"
+          ? "section-padding py-12 shadow bg-gray-900"
+          : "section-padding py-12 shadow bg-gray-100"
       }
       id="about"
     >
       <div className="flex flex-col-reverse gap-9 md:flex-row md:content-center">
-
         <div className="self-center flex flex-col gap-2 w-full">
           <Title title={"About Me"} />
           <p>

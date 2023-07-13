@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Container, Stack, Button } from "@chakra-ui/react";
 import FormInput from "./FormInput";
 import { FormProvider, useForm } from "react-hook-form";
-import * as Yup from "yup";
 import { object, string } from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FormTextArea from "./FormTextArea";
-import Title from "../Title";
+import Title from "../Components/Title";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
-import {CgMail} from 'react-icons/cg'
+import { CgMail } from "react-icons/cg";
 
 const ContactForm = () => {
   let userSchema = object().shape({
@@ -70,14 +69,17 @@ const ContactForm = () => {
           <a href="https://github.com/MyaGwen" target="_blank">
             <AiFillGithub size={30} />
           </a>
-          <a href="https://www.linkedin.com/in/wendy-edem-ahadome-9b74b4241/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/wendy-edem-ahadome-9b74b4241/"
+            target="_blank"
+          >
             <AiFillLinkedin size={30} />
           </a>
           <a href="https://twitter.com/mya_gwen" target="_blank">
             <AiOutlineTwitter size={30} />
           </a>
           <a href="mailto:myagwendolyn@gmail.com" target="_blank">
-            <CgMail size={30}/>
+            <CgMail size={30} />
           </a>
         </div>
       </div>

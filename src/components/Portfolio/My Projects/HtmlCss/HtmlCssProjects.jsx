@@ -1,6 +1,6 @@
 import React from "react";
 import { htmlCss } from "./htmlCss";
-import SectionDivider from "../../../SectionDivider";
+import SectionDivider from "../../Components/SectionDivider";
 
 const HtmlCssProjects = ({ darkMode }) => {
   const myHtmlCssProjects = htmlCss.map((item) => (
