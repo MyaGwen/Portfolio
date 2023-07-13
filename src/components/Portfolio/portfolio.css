@@ -237,7 +237,7 @@ nav {
 }
 
 .download {
-  border: 3px solid #ae67fa;
+  border: 2px solid #ae67fa;
   border-radius: 8px;
 }
 
@@ -253,29 +253,6 @@ nav {
 }
 
 /* MAIN styles */
-main {
-  padding: 57px 27px;
-  background-image: url("./images/react-icon-light.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  flex: 1 1 auto;
-}
-
-.main--facts {
-  margin-top: 46px;
-  max-width: 400px;
-}
-
-.main--facts > li {
-  line-height: 19px;
-  padding-block: 10px;
-}
-
-.main--facts > li::marker {
-  font-size: 1.4rem;
-  color: #61dafb;
-}
-
 .projectContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
