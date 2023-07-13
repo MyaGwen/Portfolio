@@ -10,7 +10,7 @@ const Footer = ({ darkMode }) => {
       }
     >
       <div className="footer max-w-screen-2xl mx-auto">
-        <p>Made with ❤️ by Mya</p>
+        <p>Designed and built by Mya ❤️</p>
       </div>
     </footer>
   );

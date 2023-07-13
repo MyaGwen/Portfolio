@@ -236,13 +236,9 @@ nav {
   position: relative;
 }
 
-.hero h1 {
-  /* transform: translateY(-50%); */
-}
-
 .download {
   border: 3px solid #ae67fa;
-  border-radius: 50px;
+  border-radius: 8px;
 }
 
 .code{
@@ -296,6 +292,10 @@ main {
 
 /* !BUTTON */
 
+/* .gradient-bg{
+  background: var(--gradient-text);
+} */
+
 .btn {
   margin: 0.5em;
   color: var(--btn-color);
@@ -304,7 +304,7 @@ main {
   /* border: 3px solid #ae67fa; */
   color: white;
   border: none;
-  border-radius: 50px;
+  border-radius: 8px;
   position: relative;
   z-index: 1;
   overflow: hidden;

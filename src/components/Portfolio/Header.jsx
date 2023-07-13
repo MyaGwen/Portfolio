@@ -17,7 +17,7 @@ const Header = () => {
                 Frontend Developer. <br />
               </span>{" "}
               <span className="text-2xl md:text-5xl lg:text-6xl">
-                I build beautiful, functional and responsive websites.
+                I build beautiful, functional and responsive interfaces.
               </span>
             </h1>
             <button className="mt-9" type="button">

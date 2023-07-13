@@ -74,8 +74,8 @@ export default function Projects({ darkMode, showBtn }) {
             onClick={() => navigate("/allProjects")}
             className="hidden self-center capitalize md:flex justify-between content-center gap-3 hover:gap-5 hover:transition-all "
           >
-            <span className="font-semibold">all projects</span>
-            <BsArrowRight className="self-center" />
+            <span className="font-semibold text-2xl">all projects</span>
+            <BsArrowRight className="self-center" size={30}/>
           </a>
         </div>
       </div>

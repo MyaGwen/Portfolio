@@ -8,8 +8,8 @@ const About = ({ darkMode }) => {
     <div
       className={
         darkMode
-          ? "section-padding py-12 shadow bg-gray-900"
-          : "section-padding py-12 shadow bg-gray-100"
+          ? "section-padding py-12 shadow bg-gray-900 slide-right"
+          : "section-padding py-12 shadow bg-gray-100 slide-right"
       }
       id="about"
     >
