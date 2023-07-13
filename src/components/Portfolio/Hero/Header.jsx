@@ -20,13 +20,11 @@ const Header = () => {
                 I build beautiful, functional and responsive interfaces.
               </span>
             </h1>
-            <button className="mt-16" type="button">
-              <a
-                href={cv}
-                target="_blank"
-                download
-                className="download text-lg font-semibold py-2 px-4 "
-              >
+            <button
+              className="mt-8 text-lg font-semibold py-1 px-4 download"
+              type="button"
+            >
+              <a href={cv} target="_blank" download>
                 Download Resume
               </a>
             </button>
