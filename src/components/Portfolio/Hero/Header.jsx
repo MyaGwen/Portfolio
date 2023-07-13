@@ -27,7 +27,7 @@ const Header = () => {
                 download
                 className="download text-lg font-semibold py-2 px-6"
               >
-                Resume
+                Download Resume
               </a>
             </button>
           </div>
