@@ -25,7 +25,7 @@ const Header = () => {
                 href={cv}
                 target="_blank"
                 download
-                className="download text-lg font-semibold py-2 px-6"
+                className="download text-lg font-semibold py-2 px-4 "
               >
                 Download Resume
               </a>
