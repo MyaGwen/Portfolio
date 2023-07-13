@@ -37,7 +37,7 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
     <header className="w-full">
       <nav className="nav max-w-screen-2xl mx-auto">
         <h3
-          className="nav--logo_text gradient-text text-4xl font-semibold mr-auto"
+          className="nav--logo_text gradient-text text-4xl font-semibold mr-auto cursor-pointer"
           onClick={() => navigate("/")}
         >
           M<span className="-ml-2">G</span>

@@ -7,7 +7,7 @@ import Travel from "../../../assets/images/travel.png";
 
 export { gameVault, checkIt, BFF, BB, Messi, Travel };
 
-export const htmlCss = [
+export const recentProjects = [
   {
     image: gameVault,
     title: "Game vault",
