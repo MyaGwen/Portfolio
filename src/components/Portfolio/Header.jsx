@@ -11,7 +11,7 @@ const Header = () => {
           {/* <h4 className="text-sm md:text-md lg:text-lg font-semibold">
             Hello,
           </h4> */}
-          <div className="ml-3 py-2">
+          <div className="ml-3 pb-2">
             <h1 className="font-semibold  max-w-4xl">
               <span className="gradient-text capitalize text-3xl md:text-6xl lg:text-7xl">
                 Frontend Developer. <br />
@@ -25,7 +25,7 @@ const Header = () => {
                 href={cv}
                 target="_blank"
                 download
-                className="download text-lg font-semibold py-2 px-6 gradient-bar"
+                className="download font-semibold py-2 px-6 gradient-bar"
               >
                 Resume
               </a>
