@@ -1,6 +1,6 @@
 export const htmlCss = [
   {
-    image: require("/src/assets/images/gamevault.png").default,
+    image: "/src/assets/images/gamevault.png",
     title: "Game vault",
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?',
     stack: "html, css, js",
@@ -9,7 +9,7 @@ export const htmlCss = [
     code: "https://github.com/MyaGwen/GameVault.git",
   },
   {
-    image: require("/src/assets/images/check it.png").default,
+    image: "/src/assets/images/check it.png",
     title: "check it",
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?',
     stack: "html, css, js",
@@ -18,7 +18,7 @@ export const htmlCss = [
     code: "https://github.com/MyaGwen/Todo-list.git",
   },
   {
-    image: require("/src/assets/images/dog.png").default,
+    image: "/src/assets/images/dog.png",
     title: "Man's BFF",
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?',
     stack: "html, css, js",
@@ -27,7 +27,7 @@ export const htmlCss = [
     code: "https://github.com/MyaGwen/Image-Gallery.git",
   },
   {
-    image: require("/src/assets/images/BB scoreboard.png").default,
+    image: "/src/assets/images/BB scoreboard.png",
     title: "Basketball Scoreboard",
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?',
     stack: "html, css, js",
@@ -36,7 +36,7 @@ export const htmlCss = [
     code: "https://github.com/MyaGwen/Basket-Ball-ScoreBoard.git",
   },
   {
-    image: require("/src/assets/images/messi.png").default,
+    image: "/src/assets/images/messi.png",
     title: "google search result of messi",
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?',
     stack: "html, css",
@@ -45,7 +45,7 @@ export const htmlCss = [
     code: "https://github.com/MyaGwen/Stutern-Messi-google-search-result.git",
   },
   {
-    image: require("/src/assets/images/travel.png").default,
+    image: "/src/assets/images/travel.png",
     title: "travel website",
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?',
     stack: "html, css",
