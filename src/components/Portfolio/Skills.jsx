@@ -2,6 +2,9 @@ import React from "react";
 import skills from "../../assets/images/mee.png";
 import Title from "../Title";
 import { AiFillHtml5 } from "react-icons/ai";
+import { DiVisualstudio } from "react-icons/di";
+import { BsFillBootstrapFill, BsGit, BsGithub } from "react-icons/bs";
+import { SiReact, SiTailwindcss } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 
 const Skills = () => {
@@ -15,107 +18,30 @@ const Skills = () => {
             className="self-center flex h-3/4 max-w-xs md:max-w-full"
           />
         </div>
-        <div className="self-center flex flex-col content-end gap-2 w-full">
-          <Title title={"Skills"} />
-          <ul className="gap-3 flex flex-col ml-5">
-            <div className="languages">
-              <p className="font-semibold text-2xl">Languages</p>
-              <li className="uppercase flex gap-1 ml-2">
-                <div className="flex content-center gap-1">
-                  <AiFillHtml5
-                    size={22}
-                    className="self-center"
-                    color="#ae67fa"
-                  />{" "}
-                  <span className="self-center">html</span>
-                </div>
-                <div className="flex content-center gap-1">
-                  <IoLogoCss3
-                    size={19}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center">css</span>
-                </div>
-                <div className="flex content-center gap-1">
-                  <IoLogoJavascript
-                    size={19}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center capitalize">javascript</span>
-                </div>
-              </li>
-            </div>
-            <div className="languages">
-              <p className="font-semibold text-2xl">Frameworks/Libraries</p>
-              <li className="capitalize flex gap-1 ml-2">
-                <div className="flex content-center gap-1">
-                  <AiFillHtml5
-                    size={22}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center">react</span>
-                </div>
-                <div className="flex content-center gap-1">
-                  <IoLogoCss3
-                    size={19}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center">Tailwind</span>
-                </div>
-                <div className="flex content-center gap-1">
-                  <IoLogoJavascript
-                    size={19}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center capitalize">Bootsrap</span>
-                </div>
-              </li>
-            </div>
-            <div className="languages">
-              <p className="font-semibold text-2xl">Tools</p>
-              <li className="capitalize flex gap-1 ml-2">
-                <div className="flex content-center gap-1">
-                  <AiFillHtml5
-                    size={22}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center">Git</span>
-                </div>
-                <div className="flex content-center gap-1">
-                  <IoLogoCss3
-                    size={19}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center">Github</span>
-                </div>
-                <div className="flex content-center gap-1">
-                  <IoLogoJavascript
-                    size={19}
-                    className="self-center"
-                    color="#9659d8"
-                  />{" "}
-                  <span className="self-center capitalize">Visual Studio</span>
-                </div>
-              </li>
-            </div>
-            <div className="languages">
-              <p className="font-semibold text-2xl">Soft Skills</p>
-              <li className="capitalize flex gap-2 ml-2">
-                <li>attention to detail</li>
-                <li>creativity</li>
-                <li>problem solving</li>
-              </li>
-            </div>
-          </ul>
+        <div className="self-center w-full md:w-1/2">
+          <Title title="Skills" />
+          <div className="grid grid-cols-3 gap-4 mt-6">
+            <SkillIcon icon={<AiFillHtml5 size={38} color="#ae67fa" />} label="HTML" />
+            <SkillIcon icon={<IoLogoCss3 size={38} color="#9659d8" />} label="CSS" />
+            <SkillIcon icon={<IoLogoJavascript size={38} color="#9659d8" />} label="Javascript" />
+            <SkillIcon icon={<SiReact size={38} color="#9659d8" />} label="React" />
+            <SkillIcon icon={<SiTailwindcss size={38} color="#9659d8" />} label="Tailwind" />
+            <SkillIcon icon={<BsFillBootstrapFill size={38} color="#9659d8" />} label="Bootstrap" />
+            <SkillIcon icon={<BsGit size={38} color="#9659d8" />} label="Git" />
+            <SkillIcon icon={<BsGithub size={38} color="#9659d8" />} label="Github" />
+            <SkillIcon icon={<DiVisualstudio size={38} color="#9659d8" />} label="Visual Studio" />
+          </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const SkillIcon = ({ icon, label }) => {
+  return (
+    <div className="flex flex-col items-center">
+      <div className="rounded-full bg-gray-200 p-2 md:p-4 max-w-12">{icon}</div>
+      <p className="mt-2 text-center text-sm md:text-lg">{label}</p>
     </div>
   );
 };
