@@ -19,16 +19,16 @@ const AllProjects = () => {
   }
 
   return (
-    <NavFooter toggleDarkMode={toggleDarkMode} darkMode={darkMode}>
-      <div className={`${darkMode ? "dark" : ""} appContainer`}>
+    <div className={`${darkMode ? "dark" : ""} appContainer`}>
+      <NavFooter toggleDarkMode={toggleDarkMode} darkMode={darkMode}>
         <div className="wrapper pt-3 pb-6 flex flex-col">
           <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
             my projects
           </h1>
           <HtmlCssProjects darkMode={darkMode} />
         </div>
-      </div>
-    </NavFooter>
+      </NavFooter>
+    </div>
   );
 };
 
