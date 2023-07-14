@@ -8,8 +8,11 @@ import FormTextArea from "./FormTextArea";
 import Title from "../Components/Title";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
+import axios from "axios";
 
 const ContactForm = () => {
+  const [messsage, setMessage] = useState("");
+
   let userSchema = object().shape({
     name: string().required("Name is required"),
     email: string().email().required("Email is required"),
@@ -23,8 +26,32 @@ const ContactForm = () => {
     setValue,
     reset,
   } = methods;
-  const onSubmit = () => {
-    methods.reset();
+  const onSubmit = async (data) => {
+    const values = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
+    try {
+      const response = await axios.post(
+        "https://getform.io/f/efdde853-05ac-454e-8018-5bff1cd84a34",
+        values
+      );
+      setMessage("Thank you for contacting us, we'll get back to you soon.");
+      console.log("Form submitted successfully");
+      reset();
+    } catch (error) {
+      if (error.response) {
+        console.log("Request failed with status code:", error.response.status);
+        console.log("Response data:", error.response.data);
+      } else {
+        console.error("Error while submitting form:", error.message);
+      }
+      methods.reset();
+      setTimeout(() => {
+        setMessage("");
+      }, 10000);
+    }
   };
 
   return (
@@ -39,6 +66,7 @@ const ContactForm = () => {
             Do you have a question, a proposal, or simply want to say hello?
             Feel free to reach out!
           </p>{" "}
+          <p style={{ color: "green" }}>{messsage ? messsage : null}</p>
           <FormProvider {...methods}>
             <form onSubmit={methods.handleSubmit(onSubmit)}>
               <Stack>
