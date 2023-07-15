@@ -1,6 +1,6 @@
 import React from "react";
 import SectionDivider from "../Components/SectionDivider";
-import cv from "../../../assets/cv.pdf";
+import cv from "../../../assets/Wendy'sCV.pdf";
 
 const Header = () => {
   return (

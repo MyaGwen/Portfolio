@@ -20,10 +20,8 @@ const ContactForm = () => {
   });
   const methods = useForm({ resolver: yupResolver(userSchema) });
   const {
-    register,
     handleSubmit,
-    formState: { errors, isSubmitting },
-    setValue,
+    formState: { isSubmitting },
     reset,
   } = methods;
   const onSubmit = async (data) => {
@@ -34,7 +32,8 @@ const ContactForm = () => {
     };
     try {
       const response = await axios.post(
-        "https://getform.io/f/efdde853-05ac-454e-8018-5bff1cd84a34",
+        "https://formspree.io/f/xknlnloe",
+        // "https://getform.io/f/efdde853-05ac-454e-8018-5bff1cd84a34",
         values
       );
       setMessage("Thank you for contacting us, we'll get back to you soon.");
