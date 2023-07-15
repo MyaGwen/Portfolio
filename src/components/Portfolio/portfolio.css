@@ -4,7 +4,7 @@
   --main-bg: #fff;
   --text-color: #2b283a;
   --toggler-bg: #2b283a;
-  --toggler-slider-circle-bg: #f8f3f1;
+  --toggler-slider-circle-bg: #fff;
   --toggler-position: flex-start;
   --toggler-border-color: #1e1f26;
   --active-list: #fff;
@@ -25,8 +25,8 @@
   --text-color: #fff;
   --toggler-slider-circle-bg: #1e1f26;
   --toggler-position: flex-end;
-  --toggler-border-color: #f8f3f1;
-  --toggler-bg: #f8f3f1;
+  --toggler-border-color: #fff;
+  --toggler-bg: #fff;
   --active-list: #2b283a;
   --header-color: #2b283a;
   --footer-bg: #1e1f26;
