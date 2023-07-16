@@ -175,7 +175,7 @@ nav {
   right: 0;
   background-color: var(--nav-bg);
   padding: 40px 0;
-  width: 50vw;
+  width: 60vw;
   height: 100vh;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   z-index: 9000;
