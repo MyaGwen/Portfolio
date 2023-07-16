@@ -44,6 +44,10 @@
 /* General */
 /* ------------------ */
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -54,7 +58,6 @@
 body {
   max-width: 100%;
   min-width: 100%;
-  scroll-behavior: smooth;
 }
 
 .appContainer {
@@ -251,6 +254,11 @@ nav {
 }
 
 /* !BUTTONS */
+
+.backToTop{
+  background: var(--gradient-bg);
+  z-index: 10000;
+}
 
 .download {
   border: 3px solid #ae67fa;

@@ -45,7 +45,7 @@ export const recentProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor vel pariatur?",
     stack: "html, css, js",
     responsive: true,
-    preview: "https://tourmaline-selkie-6b5806.netlify.app/",
+    preview: "https://bball-scorerecorder.netlify.app/",
     code: "https://github.com/MyaGwen/Basket-Ball-ScoreBoard.git",
   },
   {

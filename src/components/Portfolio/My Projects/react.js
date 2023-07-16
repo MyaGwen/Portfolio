@@ -24,7 +24,7 @@ export const react = [
     image: "src/assets/images/BB scoreboard.png",
     title: "Basketball Scoreboard",
     stack: "html, css, js",
-    preview: "https://tourmaline-selkie-6b5806.netlify.app/",
+    preview: "https://bball-scorerecorder.netlify.app/",
     code: "https://github.com/MyaGwen/Basket-Ball-ScoreBoard.git",
   },
   {
