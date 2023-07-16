@@ -4,56 +4,60 @@ import Title from "../Components/Title";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiVisualstudio } from "react-icons/di";
 import { BsFillBootstrapFill, BsGit, BsGithub } from "react-icons/bs";
-import { SiReact, SiTailwindcss } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiJavascript } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 
 const Skills = () => {
   return (
     <div className="py-12 section-padding" id="skills">
-      <div className="flex flex-col gap-9 md:flex-row md:content-center justify-between">
-        <div className="w-full flex justify-center md:justify-start">
-          <img
-            src={skills}
-            alt="AboutMe"
-            className="self-center flex h-3/4 max-w-xs md:max-w-full"
-          />
-        </div>
-        <div className="self-center w-full md:w-1/2">
-          <Title title="Skills" />
-          <div className="grid grid-cols-3 gap-4 mt-6">
-            <SkillIcon
-              icon={<AiFillHtml5 size={38} color="#ae67fa" />}
-              label="HTML"
-            />
-            <SkillIcon
-              icon={<IoLogoCss3 size={38} color="#9659d8" />}
-              label="CSS"
-            />
-            <SkillIcon
-              icon={<IoLogoJavascript size={38} color="#9659d8" />}
-              label="Javascript"
-            />
-            <SkillIcon
-              icon={<SiReact size={38} color="#9659d8" />}
-              label="React"
-            />
-            <SkillIcon
-              icon={<SiTailwindcss size={38} color="#9659d8" />}
-              label="Tailwind"
-            />
-            <SkillIcon
-              icon={<BsFillBootstrapFill size={38} color="#9659d8" />}
-              label="Bootstrap"
-            />
-            <SkillIcon icon={<BsGit size={38} color="#9659d8" />} label="Git" />
-            <SkillIcon
-              icon={<BsGithub size={38} color="#9659d8" />}
-              label="Github"
-            />
-            <SkillIcon
-              icon={<DiVisualstudio size={38} color="#9659d8" />}
-              label="Visual Studio"
-            />
+      <Title title="Skills" />
+      <div className="flex flex-col md:gap-12 md:flex-row md:content-center md:justify-center">
+        <div className="md:mx-auto flex flex-col md:flex-row md:gap-32 gap-8">
+          <div>
+            <h2 className="text-2xl md:text-4xl font-semibold mb-3">Tech Stack:</h2>
+            <div className="w-full grid grid-cols-3 gap-9 items-center">
+              <SkillIcon
+                icon={<AiFillHtml5 size={120} className="h-20" color="#e34c26" />}
+                label="HTML"
+              />
+              <SkillIcon
+                icon={<IoLogoCss3 size={120} className="h-20" color="#2965f1" />}
+                label="CSS"
+              />
+              <SkillIcon
+                icon={<SiJavascript size={80} className="h-20" color="#f0db4f" />}
+                label="Javascript"
+              />
+              <SkillIcon
+                icon={<SiReact size={120} className="h-20" color="#61dafb" />}
+                label="React"
+              />
+              <SkillIcon
+                icon={<SiTailwindcss size={120} className="h-20" color="#06b6d4" />}
+                label="Tailwind"
+              />
+              <SkillIcon
+                icon={<BsFillBootstrapFill size={120} className="h-20" color="#7952b3" />}
+                label="Bootstrap"
+              />
+            </div>
+          </div>
+          <div>
+            <h2 className="text-2xl md:text-4xl font-semibold mb-3">Tools:</h2>
+            <div className="w-full grid grid-cols-3 gap-9">
+              <SkillIcon
+                icon={<BsGit size={120} className="h-20" color="#f34f29" />}
+                label="Git"
+              />
+              <SkillIcon
+                icon={<BsGithub size={120} className="h-20" color="#4078c0" />}
+                label="Github"
+              />
+              <SkillIcon
+                icon={<DiVisualstudio size={120} className="h-20" color="#007acc" />}
+                label="Visual Studio"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -64,7 +68,7 @@ const Skills = () => {
 const SkillIcon = ({ icon, label }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="rounded-full bg-gray-200 p-2 md:p-4 max-w-12">{icon}</div>
+      {icon}
       <p className="mt-2 text-center text-sm md:text-lg">{label}</p>
     </div>
   );
