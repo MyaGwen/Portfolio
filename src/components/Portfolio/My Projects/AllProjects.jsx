@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HtmlCssProjects from "./HtmlCss/HtmlCssProjects";
+import HtmlCssProjects from "./AllProjectsPage/HtmlCss/HtmlCssProjects";
 import NavFooter from "../NavFooter/NavFooter";
 
 const AllProjects = () => {
@@ -20,12 +20,14 @@ const AllProjects = () => {
 
   return (
     <div className={`${darkMode ? "dark" : ""} appContainer`}>
-      <NavFooter toggleDarkMode={toggleDarkMode} darkMode={darkMode}>
-        <div className="wrapper pt-3 pb-6 flex flex-col">
-          <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
-            my projects
-          </h1>
-          <HtmlCssProjects darkMode={darkMode} />
+      <NavFooter toggleDarkMode={toggleDarkMode} darkMode={darkMode} projectPage={true}>
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="wrapper pt-3 pb-6 flex flex-col">
+            <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
+              my projects
+            </h1>
+            <HtmlCssProjects darkMode={darkMode} />
+          </div>
         </div>
       </NavFooter>
     </div>

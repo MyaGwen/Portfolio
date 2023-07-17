@@ -5,11 +5,9 @@ import Title from "../Components/Title";
 const About = ({ darkMode }) => {
   return (
     <div
-      className={
-        darkMode
-          ? "section-padding py-12 shadow bg-gray-900"
-          : "section-padding py-12 shadow bg-gray-100"
-      }
+      className={`py-12 section-padding shadow ${
+        darkMode ? "bg-gray-900" : "bg-gray-100"
+      }`}
       id="about"
     >
       <div className="flex flex-col-reverse gap-9 md:flex-row md:content-center">

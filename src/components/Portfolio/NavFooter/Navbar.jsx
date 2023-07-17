@@ -46,7 +46,9 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
         <div className="links-toggle">
           <ul className={menu ? "mainlist mx-auto" : "display"}>
             {projectPage ? (
-              <li onClick={() => navigate("/")}>Home</li>
+              <li onClick={() => {}} className="font-semibold text-lg">
+                <a href="/">Home</a>
+              </li>
             ) : (
               navItem
             )}

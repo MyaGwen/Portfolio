@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./portfolio.css";
-import Projects from "./RecentProjects/Projects";
+import Header from "./Hero/Header";
 import About from "./About/About";
 import Skills from "../Portfolio/Skills/Skills";
-import Header from "./Hero/Header";
+import RecentProjects from './My Projects/RecentProjects/Projects'
 import ContactForm from "./Form/ContactForm";
 import NavFooter from "./NavFooter/NavFooter";
 import { BsArrowUp } from "react-icons/bs";
@@ -60,7 +60,7 @@ export default function PortfolioApp() {
               </button>
             )}
             <Skills />
-            <Projects darkMode={darkMode} />
+            <RecentProjects darkMode={darkMode} />
             <ContactForm />
           </div>
         </div>

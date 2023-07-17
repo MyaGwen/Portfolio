@@ -1,30 +1,20 @@
-import React from "react";
-import { htmlCss } from "./htmlCss";
-import SectionDivider from "../../Components/SectionDivider";
-
-const HtmlCssProjects = ({ darkMode }) => {
-  const myHtmlCssProjects = htmlCss.map((item) => (
+export default function Projects({ item, darkMode }) {
+  return (
     <div
-      className={
-        darkMode
-          ? "card flex flex-col justify-center rounded shadow text-white"
-          : "card flex flex-col justify-center rounded shadow text-black"
-      }
+      className="card text-sm md:text-md rounded-b flex flex-col justify-center p-4"
       key={item.id}
     >
       <img className="rounded-t self-start" src={item.image} alt={item.title} />
       <div
-        className={
-          darkMode
-            ? "card bg-gray-800 text-sm md:text-md rounded-b flex flex-col justify-center p-4"
-            : "card bg-gray-100 text-sm md:text-md rounded-b flex flex-col justify-center p-4"
-        }
+        className={`card text-sm md:text-md rounded-b flex flex-col gap-1 justify-center p-4 ${
+          darkMode ? "bg-gray-800" : "bg-gray-100"
+        }`}
       >
-        <div className="title pt-2 pb-2 text-left">
+        <div className="title text-left">
           <span className="font-bold capitalize">title: </span>{" "}
           <span className="capitalize">{item.title}</span>
         </div>
-        <div className="tech-stack pb-1">
+        <div className="tech-stack">
           <span className="font-bold capitalize">stack: </span>{" "}
           <span className="uppercase">
             {item.stack}
@@ -33,7 +23,7 @@ const HtmlCssProjects = ({ darkMode }) => {
             </span>{" "}
           </span>
         </div>
-        <div className="title pt-2 pb-2 text-left">
+        <div className="title text-left">
           <span className="font-bold capitalize">description: </span>{" "}
           <span className="capitalize">{item.description}</span>
         </div>
@@ -53,18 +43,5 @@ const HtmlCssProjects = ({ darkMode }) => {
         </div>
       </div>
     </div>
-  ));
-  return (
-    <div className="flex flex-col  section-padding">
-      <div className="title">
-        <SectionDivider />
-        <h2 className="text-2xl md:text-3xl font-semibold mb-3">
-          HTML and CSS
-        </h2>
-      </div>
-      <div className="projectContainer py-2 px-3">{myHtmlCssProjects}</div>
-    </div>
   );
-};
-
-export default HtmlCssProjects;
+}
