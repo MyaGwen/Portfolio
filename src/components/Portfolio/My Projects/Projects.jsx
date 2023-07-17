@@ -34,12 +34,14 @@ export default function Projects({ item, darkMode }) {
               Preview
             </a>
           </button>
-          <button className="btn text-md font-bold py-2 px-4">
-            {" "}
-            <a href={item.code} target="_blank" rel="noopener noreferrer">
-              Code
-            </a>
-          </button>
+          {item.code && (
+            <button className="btn text-md font-bold py-2 px-4">
+              {" "}
+              <a href={item.code} target="_blank" rel="noopener noreferrer">
+                Code
+              </a>
+            </button>
+          )}
         </div>
       </div>
     </div>
