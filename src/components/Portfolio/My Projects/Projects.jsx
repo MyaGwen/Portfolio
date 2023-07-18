@@ -6,7 +6,7 @@ export default function Projects({ item, darkMode }) {
     >
       <img className="rounded-t self-start" src={item.image} alt={item.title} />
       <div
-        className={`card text-sm md:text-md rounded-b flex flex-col gap-1 justify-center p-4 ${
+        className={`card text-sm md:text-md rounded-b flex flex-col gap-1 justify-center p-4 shadow ${
           darkMode ? "bg-gray-800" : "bg-gray-100"
         }`}
       >
@@ -19,11 +19,11 @@ export default function Projects({ item, darkMode }) {
           <span className="uppercase">
             {item.stack}
             <span className="capitalize">
-              {item.responsive === true ? ", Responsive" : ""}
+              {item.responsive === true ? ", Responsive" : ", Not Responsive"}
             </span>{" "}
           </span>
         </div>
-        <div className="title text-left">
+        <div className="title text-left h-16 md:14">
           <span className="font-bold capitalize">description: </span>{" "}
           <span className="capitalize">{item.description}</span>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import { htmlCss } from "../../everyProject";
-import AllProjectsData from "../../AllProjectsData";
+import { htmlCss } from "../everyProject";
+import AllProjectsData from "../AllProjectsData";
 
 const HtmlCssProjects = ({ darkMode }) => {
   return (
@@ -8,7 +8,7 @@ const HtmlCssProjects = ({ darkMode }) => {
       darkMode={darkMode}
       dataToMap={htmlCss}
       title="HTML and CSS"
-      color={darkMode ? 'bg-gray-900' : 'bg-gray-100' }
+      color={darkMode ? "bg-gray-900" : "bg-gray-100"}
     />
   );
 };

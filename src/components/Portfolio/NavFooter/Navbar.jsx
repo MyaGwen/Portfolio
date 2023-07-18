@@ -20,7 +20,6 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
     { name: "Contact", link: "#contact" },
   ];
 
-
   //! Fxns
 
   //! Map
@@ -62,11 +61,10 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
                 <CgClose size={25} className="menuIcon" />
               )}
             </button>
+
             <ul className={!menu ? "menulist" : "display"}>
               {projectPage ? (
-                <li onClick={() => {}} className="font-semibold text-lg">
-                  <a href="/">Home</a>
-                </li>
+                <li onClick={() => navigate("/")}>Home</li>
               ) : (
                 navItem
               )}
