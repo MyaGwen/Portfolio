@@ -24,8 +24,8 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
 
   //! Map
   const navItem = navItems.map((item, index) => (
-    <li key={index} onClick={() => {}} className="font-semibold text-lg">
-      <a href={item.link}>{item.name}</a>
+    <li key={index} className="font-semibold text-xl">
+      <a href={item.link} onClick={() => setMenu(true)}>{item.name}</a>
     </li>
   ));
 
@@ -62,7 +62,7 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
               )}
             </button>
 
-            <ul className={!menu ? "menulist" : "display"}>
+            <ul className={!menu ? "menulist gap-12 my-auto" : "display"}>
               {projectPage ? (
                 <li onClick={() => navigate("/")}>Home</li>
               ) : (
