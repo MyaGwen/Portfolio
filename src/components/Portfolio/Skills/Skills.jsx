@@ -3,7 +3,7 @@ import Title from "../Components/Title";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiVisualstudio, DiJavascript1 } from "react-icons/di";
 import { BsFillBootstrapFill, BsGit, BsGithub } from "react-icons/bs";
-import { SiReact, SiTailwindcss } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiFigma } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
 
 const Skills = () => {
@@ -59,7 +59,7 @@ const Skills = () => {
                 label="Visual Studio"
               />
               <SkillIcon
-                icon={<DiVisualstudio size={100} color="#007acc" />}
+                icon={<SiFigma size={100} color="#FF0000" />}
                 label="Figma"
               />
             </div>
