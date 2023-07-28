@@ -62,7 +62,7 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
               )}
             </button>
 
-            <ul className={!menu ? "menulist gap-12 my-auto" : "display"}>
+            <ul className={!menu ? "menulist gap-12" : "display"}>
               {projectPage ? (
                 <li onClick={() => navigate("/")}>Home</li>
               ) : (

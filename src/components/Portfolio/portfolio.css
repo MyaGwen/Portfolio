@@ -180,17 +180,16 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
   position: absolute;
   top: 60px;
   right: 0;
   background-color: var(--nav-bg);
-  /* padding: 40px 0; */
+  padding: 0;
   width: 60vw;
-  height: 100vh;
+  height: calc(100vh - 60px);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   z-index: 9000;
-  z-index: 1500;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
