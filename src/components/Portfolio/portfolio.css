@@ -167,8 +167,9 @@ nav {
 }
 
 .mainlist li:last-child,
-.menulist li:last-child {
-  padding: 0.25rem 1rem;
+.menulist li:last-child,
+.project {
+  padding: 0.20rem 1rem;
 }
 
 .mainlist {
@@ -272,7 +273,8 @@ nav {
 
 .download,
 .mainlist li:last-child,
-.menulist li:last-child {
+.menulist li:last-child,
+.project {
   border: 3px solid #ae67fa;
   border-radius: 8px;
   /* background: var(--gradient-bg); */
@@ -282,12 +284,14 @@ nav {
 }
 
 .download:hover,
+.project:hover,
 .mainlist li:last-child:hover,
 .menulist li:last-child:hover {
   color: #fff;
 }
 
 .download:after,
+.project:after,
 .mainlist li:last-child:after,
 .menulist li:last-child:after {
   content: "";
@@ -303,6 +307,7 @@ nav {
 }
 
 .download:hover:after,
+.project:hover:after,
 .mainlist li:last-child:hover:after,
 .menulist li:last-child:hover:after {
   transform: skewX(-45deg) scale(1, 1);

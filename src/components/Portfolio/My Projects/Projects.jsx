@@ -25,7 +25,7 @@ export default function Projects({ item, darkMode }) {
         </div>
         <div className="title text-left h-16 md:14">
           <span className="font-bold capitalize">description: </span>{" "}
-          <span className="capitalize">{item.description}</span>
+          <span className="first-letter:uppercase">{item.description}</span>
         </div>
         <div className="buttons self-center">
           <button className="btn text-md font-bold py-2 px-4">

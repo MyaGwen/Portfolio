@@ -23,7 +23,7 @@ export default function Projects({ darkMode, showBtn }) {
           <Title title={"Recent Projects"} />
           <a
             onClick={() => navigate("/allProjects")}
-            className="hidden self-center capitalize md:flex justify-between content-center gap-3 hover:gap-5 hover:transition-all "
+            className="hidden self-center capitalize md:flex justify-between content-center gap-3 hover:gap-5 hover:transition-all"
           >
             <span className="font-semibold text-2xl">all projects</span>
             <BsArrowRight className="self-center" size={30} />

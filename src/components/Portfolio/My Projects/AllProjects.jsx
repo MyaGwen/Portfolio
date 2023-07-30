@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HtmlCssProjects from "./AllProjectsPage/HtmlCssProjects";
 import HtmlCssJs from "./AllProjectsPage/HtmlCssJs";
+import ReactJs from "./AllProjectsPage/ReactJs";
 import NavFooter from "../NavFooter/NavFooter";
 import { BsArrowUp } from "react-icons/bs";
 
@@ -52,6 +53,7 @@ const AllProjects = () => {
             {/* <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
               my projects
             </h1> */}
+            <ReactJs darkMode={darkMode} />
             <HtmlCssJs darkMode={darkMode} />
             <HtmlCssProjects darkMode={darkMode} />
             {showButton && (

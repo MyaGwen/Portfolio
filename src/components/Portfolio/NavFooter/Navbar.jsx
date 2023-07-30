@@ -25,7 +25,9 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
   //! Map
   const navItem = navItems.map((item, index) => (
     <li key={index} className="font-semibold text-xl">
-      <a href={item.link} onClick={() => setMenu(true)}>{item.name}</a>
+      <a href={item.link} onClick={() => setMenu(true)}>
+        {item.name}
+      </a>
     </li>
   ));
 
@@ -44,31 +46,42 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
         </h3>
 
         <div className="links-toggle">
-          <ul className={menu ? "mainlist mx-auto" : "display"}>
+          <ul className={menu || projectPage ? "mainlist mx-auto" : "display"}>
             {projectPage ? (
-              <li onClick={() => {}} className="font-semibold text-lg">
-                <a href="/">Home</a>
+              <li
+                onClick={() => navigate("/")}
+                className="font-semibold text-lg project"
+              >
+                Home
               </li>
             ) : (
               navItem
             )}
           </ul>
-          <div className="md-sm">
-            <button className="menubtn p-1" onClick={menuToggle}>
-              {menu ? (
-                <HiMenu size={25} className="menuIcon" />
-              ) : (
-                <CgClose size={25} className="menuIcon" />
-              )}
-            </button>
-
-            <ul className={!menu ? "menulist gap-12" : "display"}>
-              {projectPage ? (
-                <li onClick={() => navigate("/")}>Home</li>
-              ) : (
-                navItem
-              )}
-            </ul>
+          <div className="menuWrap">
+            {!projectPage ? (
+              <div className="md-sm">
+                <button className="menubtn p-1" onClick={menuToggle}>
+                  {menu ? (
+                    <HiMenu size={25} className="menuIcon" />
+                  ) : (
+                    <CgClose size={25} className="menuIcon" />
+                  )}
+                </button>
+                <ul className={!menu ? "menulist gap-12" : "display"}>
+                  {navItem}
+                </ul>
+              </div>
+            ) : (
+              <ul className={"mx-auto md:hidden"}>
+                <li
+                  onClick={() => navigate("/")}
+                  className="font-semibold text-lg project"
+                >
+                  Home
+                </li>
+              </ul>
+            )}
           </div>
           <div className="toggler">
             <div className="toggler--slider" onClick={toggleDarkMode}>
