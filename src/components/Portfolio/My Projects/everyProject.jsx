@@ -1,6 +1,6 @@
 import gameVault from "../../../assets/images/gamevault.png";
 import loanwise from "../../../assets/images/loanwise.png";
-import checkIt from "../../../assets/images/check it.png";
+import checkIt from "../../../assets/images/checkit.png";
 import BFF from "../../../assets/images/dog.png";
 import BB from "../../../assets/images/BB scoreboard.png";
 import Messi from "../../../assets/images/messi.png";
@@ -64,8 +64,8 @@ export const recentProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://check-it-gamma.vercel.app/",
-    code: "https://github.com/MyaGwen/Todo-list.git",
+    preview: "https://gpt-3-sigma-five.vercel.app/",
+    code: "https://github.com/MyaGwen/GPT3",
   },
   {
     image: memegen,
@@ -74,14 +74,14 @@ export const recentProjects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS, api",
     responsive: true,
-    preview: "https://check-it-gamma.vercel.app/",
-    code: "https://github.com/MyaGwen/Todo-list.git",
+    preview: "https://meme-generator-theta-beryl.vercel.app/",
+    code: "https://github.com/MyaGwen/Meme-Generator",
   },
   {
     image: gameVault,
     title: "Game vault",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "A platform where you can find links to play and download your favorite games.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://game-vault-mu.vercel.app/",
@@ -127,8 +127,8 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://check-it-gamma.vercel.app/",
-    code: "https://github.com/MyaGwen/Todo-list.git",
+    preview: "https://gpt-3-sigma-five.vercel.app/",
+    code: "https://github.com/MyaGwen/GPT3",
   },
   {
     image: memegen,
@@ -156,8 +156,8 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://bball-scorerecorder.netlify.app/",
-    code: "https://github.com/MyaGwen/Basket-Ball-ScoreBoard.git",
+    preview: "https://google-homepage-clone-six.vercel.app/",
+    code: "https://github.com/MyaGwen/Google-homepage",
   },
   {
     image: employeesearch,
@@ -176,8 +176,8 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://mans-bff-gallery.netlify.app/",
-    code: "https://github.com/MyaGwen/Image-Gallery.git",
+    preview: "https://air-bnb-clone-indol.vercel.app/",
+    code: "https://github.com/MyaGwen/AirBnb-clone/tree/main",
   },
   {
     image: digital,
@@ -196,8 +196,8 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://mans-bff-gallery.netlify.app/",
-    code: "https://github.com/MyaGwen/Image-Gallery.git",
+    preview: "https://react-info-site-psi.vercel.app/",
+    code: "https://github.com/MyaGwen/React-Info-Site",
   },
 ];
 
@@ -299,8 +299,8 @@ export const htmlCss = [
     description: "A basic birthday gift site",
     stack: "html, css",
     responsive: true,
-    preview: "https://instagram-replication.netlify.app/",
-    code: "https://github.com/MyaGwen/Stutern-Instagram-Replica.git",
+    preview: "https://birthday-gift-app.netlify.app/",
+    code: "https://github.com/MyaGwen/Birthday-Gift-Site",
   },
   {
     image: instagram,
@@ -326,8 +326,8 @@ export const htmlCss = [
     description: "A Google homepage clone.",
     stack: "html, css",
     responsive: false,
-    preview: "https://netflix-replication.netlify.app/",
-    code: "https://github.com/MyaGwen/Netflix-Replica.git",
+    preview: "https://googlehtmlcssclone.vercel.app/",
+    code: "https://github.com/MyaGwen/googlehtmlcssclone",
   },
   {
     image: udemy,

@@ -5,7 +5,6 @@ import ReactJs from "./AllProjectsPage/ReactJs";
 import NavFooter from "../NavFooter/NavFooter";
 import { BsArrowUp } from "react-icons/bs";
 
-
 const AllProjects = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -50,9 +49,6 @@ const AllProjects = () => {
       >
         <div className="max-w-screen-2xl mx-auto">
           <div className="wrapper">
-            {/* <h1 className="capitalize text-center text-4xl md:text-5xl font-semibold mb-8 lg:text-5xl">
-              my projects
-            </h1> */}
             <ReactJs darkMode={darkMode} />
             <HtmlCssJs darkMode={darkMode} />
             <HtmlCssProjects darkMode={darkMode} />
