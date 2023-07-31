@@ -86,7 +86,7 @@ export const recentProjects = [
     responsive: true,
     preview: "https://game-vault-mu.vercel.app/",
     code: "https://github.com/MyaGwen/GameVault.git",
-  }
+  },
 ];
 
 export const reactJs = [
@@ -301,8 +301,8 @@ export const htmlCss = [
     description: "A fake professor's portfolio",
     stack: "html, css",
     responsive: true,
-    preview: "https://instagram-replication.netlify.app/",
-    code: "https://github.com/MyaGwen/Stutern-Instagram-Replica.git",
+    preview:
+      "https://project-1-cs-professor-home-page-myagwendolyn.tk8-web-foundations.repl.co/",
   },
   {
     image: birthday,
@@ -355,8 +355,8 @@ export const htmlCss = [
     description: "A basic nft landing page.",
     stack: "html, css",
     responsive: true,
-    preview: "https://udemy-replica.netlify.app/",
-    code: "https://github.com/MyaGwen/Udemy-Replica.git",
+    preview: "https://nft-wb.netlify.app/",
+    code: "https://github.com/MyaGwen/Nft-site",
   },
   {
     image: Messi,
@@ -373,8 +373,8 @@ export const htmlCss = [
     description: "A basic business card",
     stack: "html, css",
     responsive: true,
-    preview: "https://gilded-horse-a1a41a.netlify.app/",
-    code: "https://github.com/MyaGwen/Stutern-Messi-google-search-result.git",
+    preview: "https://bsnesscard.netlify.app",
+    code: "https://github.com/MyaGwen/Business-Card",
   },
   {
     image: Travel,
