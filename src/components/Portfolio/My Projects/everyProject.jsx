@@ -20,7 +20,7 @@ import cookie from "../../../assets/images/cookie.png";
 import starwars from "../../../assets/images/starwars.png";
 import digital from "../../../assets/images/digital.png";
 import moviesearch from "../../../assets/images/moviesearch.png";
-import employeesearch from "../../../assets/images/employee search filter.png";
+import employeesearch from "../../../assets/images/employeesearch.png";
 import googlereact from "../../../assets/images/googlereact.png";
 import googlehtml from "../../../assets/images/googlehtml.png";
 import professor from "../../../assets/images/professor.png";
@@ -167,8 +167,8 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://mans-bff-gallery.netlify.app/",
-    code: "https://github.com/MyaGwen/Image-Gallery.git",
+    preview: "https://react-profile-search.netlify.app/",
+    code: "https://github.com/MyaGwen/React-Profile-Search",
   },
   {
     image: BFF,
@@ -187,8 +187,8 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
     responsive: true,
-    preview: "https://mans-bff-gallery.netlify.app/",
-    code: "https://github.com/MyaGwen/Image-Gallery.git",
+    preview: "https://digital-business-card-tan.vercel.app/",
+    code: "https://github.com/MyaGwen/Digital-business-card",
   },
   {
     image: BFF,
