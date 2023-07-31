@@ -8,6 +8,7 @@ const HtmlCssJs = ({ darkMode }) => {
       darkMode={darkMode}
       dataToMap={htmlCssJs}
       title="HTML, CSS and JS"
+      color={darkMode ? "bg-gray-900" : "bg-gray-100"}
     />
   );
 };

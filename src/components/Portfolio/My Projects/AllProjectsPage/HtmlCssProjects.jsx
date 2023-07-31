@@ -8,7 +8,6 @@ const HtmlCssProjects = ({ darkMode }) => {
       darkMode={darkMode}
       dataToMap={htmlCss}
       title="HTML and CSS"
-      color={darkMode ? "bg-gray-900" : "bg-gray-100"}
     />
   );
 };

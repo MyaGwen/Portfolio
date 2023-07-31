@@ -137,14 +137,13 @@ export const reactJs = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS, api",
     responsive: true,
-    preview: "https://check-it-gamma.vercel.app/",
-    code: "https://github.com/MyaGwen/Todo-list.git",
+    preview: "https://meme-generator-theta-beryl.vercel.app/",
+    code: "https://github.com/MyaGwen/Meme-Generator",
   },
   {
     image: starwars,
     title: "Star Wars Clone",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+    description: "a Star wars website clone",
     stack: "React JS, api",
     responsive: true,
     preview: "https://star-wars-movie-app.vercel.app/",
@@ -207,7 +206,7 @@ export const htmlCssJs = [
     image: gameVault,
     title: "Game vault",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "A platform where you can find links to play and download your favorite games.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://game-vault-mu.vercel.app/",
@@ -247,7 +246,7 @@ export const htmlCssJs = [
     image: checkIt,
     title: "check it",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "web app for creating and managing to-do lists, featuring add, edit, and delete functionalities with local storage support.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://check-it-gamma.vercel.app/",
@@ -257,7 +256,7 @@ export const htmlCssJs = [
     image: BB,
     title: "Basketball Scoreboard",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "web app with interactive buttons to update and display scores for the home and guest teams.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://bball-scorerecorder.netlify.app/",
@@ -267,17 +266,7 @@ export const htmlCssJs = [
     image: BFF,
     title: "Man's BFF",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
-    stack: "html, css, js",
-    responsive: true,
-    preview: "https://mans-bff-gallery.netlify.app/",
-    code: "https://github.com/MyaGwen/Image-Gallery.git",
-  },
-  {
-    image: BFF,
-    title: "Passenger Counter App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "Showcases heartwarming images of dogs, enabling users to click and view each image in a selected div.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://mans-bff-gallery.netlify.app/",
