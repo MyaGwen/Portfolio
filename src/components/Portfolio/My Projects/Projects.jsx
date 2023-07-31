@@ -1,7 +1,7 @@
 export default function Projects({ item, darkMode }) {
   return (
     <div
-      className="card text-sm md:text-md rounded-b flex flex-col justify-center p-4 shadow "
+      className="card text-sm md:text-md rounded-b flex flex-col justify-center shadow "
       key={item.id}
     >
       <img className="rounded-t self-start" src={item.image} alt={item.title} />
