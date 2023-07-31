@@ -24,7 +24,7 @@ import employeesearch from "../../../assets/images/employeesearch.png";
 import googlereact from "../../../assets/images/googlereact.png";
 import googlehtml from "../../../assets/images/googlehtml.png";
 import professor from "../../../assets/images/professor.png";
-import bznessCard from "../../../assets/images/bzness card.png";
+import bznessCard from "../../../assets/images/bznesscard.png";
 
 export const recentProjects = [
   {
@@ -104,7 +104,7 @@ export const reactJs = [
     image: moviesearch,
     title: "Movie Search App",
     description:
-      "A movie search app using React and TMDb API to display movie details based on user input.",
+      "A web app using React and TMDb API to display movie details based on user input.",
     stack: "React JS, api",
     responsive: true,
     preview: "https://movie-search-app-self.vercel.app/",
@@ -161,7 +161,7 @@ export const reactJs = [
   },
   {
     image: employeesearch,
-    title: "profile search",
+    title: "Dummy employee search",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
