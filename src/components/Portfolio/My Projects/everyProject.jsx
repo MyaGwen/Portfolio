@@ -25,6 +25,7 @@ import googlereact from "../../../assets/images/googlereact.png";
 import googlehtml from "../../../assets/images/googlehtml.png";
 import professor from "../../../assets/images/professor.png";
 import bznessCard from "../../../assets/images/bznesscard.png";
+import reactinfo from "../../../assets/images/reactinfo.png";
 
 export const recentProjects = [
   {
@@ -190,7 +191,7 @@ export const reactJs = [
     code: "https://github.com/MyaGwen/Digital-business-card",
   },
   {
-    image: BFF,
+    image: reactinfo,
     title: "React Info Site",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
