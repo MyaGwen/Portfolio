@@ -59,7 +59,7 @@ export const recentProjects = [
   },
   {
     image: gpt3,
-    title: "Modern Restaurant App",
+    title: "GPT-3",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
