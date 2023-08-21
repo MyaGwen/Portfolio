@@ -13,8 +13,9 @@ const About = ({ darkMode }) => {
         <div className="self-center flex flex-col gap-2 w-full">
           <Title title="About Me" />
           <p>
-            I'm
+            I&apos;m
             <span className="gradient-text font-semibold">
+              {" "}
               Wendy Edem Ahadome
             </span>
             , a Frontend Developer from Accra, Ghana. Although I studied

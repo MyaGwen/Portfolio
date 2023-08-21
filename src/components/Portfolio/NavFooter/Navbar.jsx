@@ -19,14 +19,14 @@ export default function Navbar({ toggleDarkMode, projectPage, darkMode }) {
   ];
 
   //! Hooks
-  const navItemRefs = navItems.map(() => useRef(null));
+  const targetRef = useRef(null);
 
   const [menu, setMenu] = useState(true);
 
   //! Fxns
-  const handleClick = (index) => {
+  const handleClick = () => {
     setMenu(true);
-    navItemRefs[index].current?.scrollIntoView({ behavior: "smooth" });
+    targetRef.current?.scrollIntoView({ behavior: smooth });
   };
 
   //! Map
@@ -35,8 +35,8 @@ export default function Navbar({ toggleDarkMode, projectPage, darkMode }) {
       href={item.link}
       key={index}
       className="font-semibold text-xl relative group"
-      onClick={() => handleClick(index)}
-      ref={navItemRefs[index]}
+      onClick={handleClick}
+      ref={targetRef}
     >
       {item.name}
       <span
