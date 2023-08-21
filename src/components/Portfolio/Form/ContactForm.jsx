@@ -9,6 +9,7 @@ import Title from "../Components/Title";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
   const [messsage, setMessage] = useState("");
@@ -55,7 +56,7 @@ const ContactForm = () => {
 
   return (
     <div
-      className="bg-dark-500 py-12 flex justify-center section-padding"
+      className="bg-dark-500 flex justify-center section-padding_margin"
       id="contact"
     >
       <div className="flex flex-col max-w-md content-center gap-5">
@@ -73,13 +74,20 @@ const ContactForm = () => {
                   name="name"
                   label="Name"
                   placeholder={"Enter full name"}
+                  className="w-full"
                 />
                 <FormInput
                   name="email"
                   label="Email Address"
                   placeholder={"Enter email address"}
+                  className="w-full"
                 />
-                <FormTextArea name="message" label="Message" resize="none" />
+                <FormTextArea
+                  name="message"
+                  label="Message"
+                  resize="none"
+                  className="w-full"
+                />
                 <Button
                   color="#242424"
                   type="submit"
@@ -93,21 +101,38 @@ const ContactForm = () => {
           </FormProvider>
         </div>
         <div className="socials flex justify-center gap-5">
-          <a href="https://github.com/MyaGwen" target="_blank">
+          <motion.a
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://github.com/MyaGwen"
+            target="_blank"
+          >
             <AiFillGithub size={30} />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
             href="https://www.linkedin.com/in/wendy-edem-ahadome-9b74b4241/"
             target="_blank"
           >
             <AiFillLinkedin size={30} />
-          </a>
-          <a href="https://twitter.com/mya_gwen" target="_blank">
+          </motion.a>
+          <motion.a
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://twitter.com/mya_gwen"
+            target="_blank"
+          >
             <AiOutlineTwitter size={30} />
-          </a>
-          <a href="mailto:myagwendolyn@gmail.com" target="_blank">
+          </motion.a>
+          <motion.a
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            href="mailto:myagwendolyn@gmail.com"
+            target="_blank"
+          >
             <CgMail size={30} />
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
-import { useNavigate } from "react-router-dom";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
-export default function Navbar({ toggleDarkMode, projectPage }) {
-  //! useStates
-  const [menu, setMenu] = useState(true);
-
-  //! useNavigate
-  const navigate = useNavigate();
+export default function Navbar({ toggleDarkMode, projectPage, darkMode }) {
+  const router = useRouter();
 
   //! Nav Items
   const navItems = [
@@ -20,15 +18,37 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
     { name: "Contact", link: "#contact" },
   ];
 
+  //! Hooks
+  const navItemRefs = navItems.map(() => useRef(null));
+
+  const [menu, setMenu] = useState(true);
+
   //! Fxns
+  const handleClick = (index) => {
+    setMenu(true);
+    navItemRefs[index].current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   //! Map
   const navItem = navItems.map((item, index) => (
-    <li key={index} className="font-semibold text-xl">
-      <a href={item.link} onClick={() => setMenu(true)}>
-        {item.name}
-      </a>
-    </li>
+    <Link
+      href={item.link}
+      key={index}
+      className="font-semibold text-xl relative group"
+      onClick={() => handleClick(index)}
+      ref={navItemRefs[index]}
+    >
+      {item.name}
+      <span
+        className={`h-[1.5px] block ${
+          darkMode ? "bg-light" : "bg-dark"
+        }  left-0 -bottom-0.5
+        group-hover:w-full transition-[width] ease duration-300 
+        ${router.pathname === item.link ? "w-full" : "w-0"}`}
+      >
+        &nbsp;
+      </span>
+    </Link>
   ));
 
   function menuToggle() {
@@ -38,22 +58,19 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
   return (
     <header className="w-full">
       <nav className="nav max-w-screen-2xl mx-auto">
-        <h3
+        <Link
+          href="/"
           className="nav--logo_text gradient-text text-4xl font-semibold mr-auto cursor-pointer"
-          onClick={() => navigate("/")}
         >
           M<span className="-ml-2">G</span>
-        </h3>
+        </Link>
 
         <div className="links-toggle">
           <ul className={menu || projectPage ? "mainlist mx-auto" : "display"}>
             {projectPage ? (
-              <li
-                onClick={() => navigate("/")}
-                className="font-semibold text-lg project"
-              >
+              <Link href="/" className="font-semibold text-lg project">
                 Home
-              </li>
+              </Link>
             ) : (
               navItem
             )}
@@ -74,12 +91,9 @@ export default function Navbar({ toggleDarkMode, projectPage }) {
               </div>
             ) : (
               <ul className={"mx-auto md:hidden"}>
-                <li
-                  onClick={() => navigate("/")}
-                  className="font-semibold text-lg project"
-                >
+                <Link href="/" className="font-semibold text-lg project">
                   Home
-                </li>
+                </Link>
               </ul>
             )}
           </div>

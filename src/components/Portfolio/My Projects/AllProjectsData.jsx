@@ -7,7 +7,7 @@ const AllProjectsData = ({ darkMode, title, dataToMap, color }) => {
     <ProjectData item={item} darkMode={darkMode} key={item.id} />
   ));
   return (
-    <div className={`flex flex-col py-12 section-padding shadow ${color && color}`}>
+    <div className={`flex flex-col section-padding_margin shadow ${color && color}`}>
       <div className="title">
         <SectionDivider />
         <h2 className="text-2xl md:text-3xl font-semibold mb-3">{title}</h2>

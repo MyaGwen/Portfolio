@@ -1,10 +1,16 @@
+import Image from "next/image";
+
 export default function Projects({ item, darkMode }) {
   return (
     <div
       className="card text-sm md:text-md rounded-b flex flex-col justify-center shadow "
       key={item.id}
     >
-      <img className="rounded-t self-start" src={item.image} alt={item.title} />
+      <Image
+        className="rounded-t self-start"
+        src={item.image}
+        alt={item.title}
+      />
       <div
         className={`card text-sm md:text-md rounded-b flex flex-col gap-1 justify-center p-4 ${
           darkMode ? "bg-gray-800" : "bg-gray-100"

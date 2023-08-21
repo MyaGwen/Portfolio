@@ -1,20 +1,19 @@
 import React from "react";
-import AboutMe from "../../../assets/images/mee.png";
+import AboutMe from "../../../../public/assets/images/mee.png";
 import Title from "../Components/Title";
+import Image from "next/image";
 
 const About = ({ darkMode }) => {
   return (
     <div
-      className={`py-12 section-padding shadow ${
-        darkMode ? "bg-gray-900" : "bg-gray-100"
-      }`}
+      className={` shadow ${darkMode ? "bg-gray-900" : "bg-gray-100"}`}
       id="about"
     >
-      <div className="flex flex-col-reverse gap-9 md:flex-row md:content-center">
+      <div className="flex section-padding_margin flex-col-reverse gap-9 md:flex-row md:content-center">
         <div className="self-center flex flex-col gap-2 w-full">
-          <Title title={"About Me"} />
+          <Title title="About Me" />
           <p>
-            I'm{" "}
+            I'm
             <span className="gradient-text font-semibold">
               Wendy Edem Ahadome
             </span>
@@ -31,10 +30,10 @@ const About = ({ darkMode }) => {
           </p>
         </div>
         <div className="w-full flex justify-center md:justify-end content-center">
-          <img
+          <Image
             src={AboutMe}
             alt="AboutMe"
-            className="self-center h-3/4 max-w-xs md:max-w-full"
+            className="self-center h-3/4 w-auto max-w-xs md:max-w-full"
           />
         </div>
       </div>

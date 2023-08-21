@@ -1,31 +1,31 @@
-import gameVault from "../../../assets/images/gamevault.png";
-import loanwise from "../../../assets/images/loanwise.png";
-import checkIt from "../../../assets/images/checkit.png";
-import BFF from "../../../assets/images/dog.png";
-import BB from "../../../assets/images/BB scoreboard.png";
-import Messi from "../../../assets/images/messi.png";
-import Travel from "../../../assets/images/travel.png";
-import udemy from "../../../assets/images/udemy.png";
-import netflix from "../../../assets/images/netflix.png";
-import instagram from "../../../assets/images/instagram.png";
-import tailwind from "../../../assets/images/tailwind.png";
-import birthday from "../../../assets/images/birthday.png";
-import nft from "../../../assets/images/nft.png";
-import blackjack from "../../../assets/images/blackjack.png";
-import restaurant from "../../../assets/images/restaurant.png";
-import gpt3 from "../../../assets/images/gpt3.png";
-import memepicker from "../../../assets/images/memepicker.png";
-import memegen from "../../../assets/images/memegen.png";
-import cookie from "../../../assets/images/cookie.png";
-import starwars from "../../../assets/images/starwars.png";
-import digital from "../../../assets/images/digital.png";
-import moviesearch from "../../../assets/images/moviesearch.png";
-import employeesearch from "../../../assets/images/employeesearch.png";
-import googlereact from "../../../assets/images/googlereact.png";
-import googlehtml from "../../../assets/images/googlehtml.png";
-import professor from "../../../assets/images/professor.png";
-import bznessCard from "../../../assets/images/bznesscard.png";
-import reactinfo from "../../../assets/images/reactinfo.png";
+import gameVault from "../../../../public/assets/images/gamevault.png";
+import loanwise from "../../../../public/assets/images/loanwise.png";
+import checkIt from "../../../../public/assets/images/checkit.png";
+import BFF from "../../../../public/assets/images/dog.png";
+import BB from "../../../../public/assets/images/BB scoreboard.png";
+import Messi from "../../../../public/assets/images/messi.png";
+import Travel from "../../../../public/assets/images/travel.png";
+import udemy from "../../../../public/assets/images/udemy.png";
+import netflix from "../../../../public/assets/images/netflix.png";
+import instagram from "../../../../public/assets/images/instagram.png";
+import tailwind from "../../../../public/assets/images/tailwind.png";
+import birthday from "../../../../public/assets/images/birthday.png";
+import nft from "../../../../public/assets/images/nft.png";
+import blackjack from "../../../../public/assets/images/blackjack.png";
+import restaurant from "../../../../public/assets/images/restaurant.png";
+import gpt3 from "../../../../public/assets/images/gpt3.png";
+import memepicker from "../../../../public/assets/images/memepicker.png";
+import memegen from "../../../../public/assets/images/memegen.png";
+import cookie from "../../../../public/assets/images/cookie.png";
+import starwars from "../../../../public/assets/images/starwars.png";
+import digital from "../../../../public/assets/images/digital.png";
+import moviesearch from "../../../../public/assets/images/moviesearch.png";
+import employeesearch from "../../../../public/assets/images/employeesearch.png";
+import googlereact from "../../../../public/assets/images/googlereact.png";
+import googlehtml from "../../../../public/assets/images/googlehtml.png";
+import professor from "../../../../public/assets/images/professor.png";
+import bznessCard from "../../../../public/assets/images/bznesscard.png";
+import reactinfo from "../../../../public/assets/images/reactinfo.png";
 
 export const recentProjects = [
   {
@@ -60,7 +60,7 @@ export const recentProjects = [
   },
   {
     image: gpt3,
-    title: "GPT-3",
+    title: "Modern Restaurant App",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
     stack: "React JS",
@@ -170,16 +170,16 @@ export const reactJs = [
     preview: "https://react-profile-search.netlify.app/",
     code: "https://github.com/MyaGwen/React-Profile-Search",
   },
-  {
-    image: BFF,
-    title: "AirBnB clone",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
-    stack: "React JS",
-    responsive: true,
-    preview: "https://air-bnb-clone-indol.vercel.app/",
-    code: "https://github.com/MyaGwen/AirBnb-clone/tree/main",
-  },
+  // {
+  //   image: BFF,
+  //   title: "AirBnB clone",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+  //   stack: "React JS",
+  //   responsive: true,
+  //   preview: "https://air-bnb-clone-indol.vercel.app/",
+  //   code: "https://github.com/MyaGwen/AirBnb-clone/tree/main",
+  // },
   {
     image: digital,
     title: "Digital business card",

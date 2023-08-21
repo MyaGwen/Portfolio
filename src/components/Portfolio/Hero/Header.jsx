@@ -1,16 +1,27 @@
 import React from "react";
 import SectionDivider from "../Components/SectionDivider";
-import cv from "../../../assets/Wendy'sCV.pdf";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="flex content-center hero section-padding" id="home">
+    <motion.div
+      initial={{
+        opacity: 0,
+        marginBottom: "auto",
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 2,
+      }}
+      className="flex justify-start items-center h-[calc(100vh-60px)] hero section-padding"
+      id="home"
+    >
       <div className="my-auto">
         <div className="hero-content flex flex-col gap-2  py-4">
           <SectionDivider />
-          {/* <h4 className="text-sm md:text-md lg:text-lg font-semibold">
-            Hello,
-          </h4> */}
           <div className="ml-3">
             <h1 className="font-semibold  max-w-4xl">
               <span className="gradient-text capitalize text-3xl md:text-6xl lg:text-7xl">
@@ -24,14 +35,14 @@ const Header = () => {
               className="mt-6 text-lg font-semibold py-1 px-4 download"
               type="button"
             >
-              <a href={cv} target="_blank" download>
+              <Link href="/Wendy'sCV.pdf" target="_blank" download={true}>
                 Download Resume
-              </a>
+              </Link>
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

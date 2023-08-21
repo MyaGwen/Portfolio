@@ -5,7 +5,11 @@ import Footer from "./Footer";
 const NavFooter = ({ children, toggleDarkMode, darkMode, projectPage }) => {
   return (
     <div>
-      <Navbar toggleDarkMode={toggleDarkMode} projectPage={projectPage && projectPage}/>
+      <Navbar
+        toggleDarkMode={toggleDarkMode}
+        projectPage={projectPage && projectPage}
+        darkMode={darkMode}
+      />
       {children}
       <Footer darkMode={darkMode} />
     </div>
