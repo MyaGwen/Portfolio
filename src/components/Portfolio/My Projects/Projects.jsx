@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Projects({ item, darkMode }) {
   return (
     <div
-      className="card text-sm md:text-md rounded-b flex flex-col justify-center shadow "
+      className="text-sm md:text-md rounded-b flex flex-col justify-center shadow "
       key={item.id}
     >
       <Image
@@ -12,7 +12,7 @@ export default function Projects({ item, darkMode }) {
         alt={item.title}
       />
       <div
-        className={`card text-sm md:text-md rounded-b flex flex-col gap-1 justify-center p-4 ${
+        className={`card text-sm md:text-md rounded-b flex flex-col gap-1 justify-start p-4 ${
           darkMode ? "bg-gray-800" : "bg-gray-100"
         }`}
       >
@@ -29,11 +29,11 @@ export default function Projects({ item, darkMode }) {
             </span>{" "}
           </span>
         </div>
-        <div className="title text-left h-16 md:14">
+        <div className="title text-left md:14">
           <span className="font-bold capitalize">description: </span>{" "}
           <span className="first-letter:uppercase">{item.description}</span>
         </div>
-        <div className="buttons self-center">
+        <div className="buttons mx-auto mt-auto">
           <button className="btn text-md font-bold py-2 px-4">
             {" "}
             <a href={item.preview} target="_blank" rel="noopener noreferrer">

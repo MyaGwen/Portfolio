@@ -208,6 +208,10 @@ nav {
   border-radius: 50%;
 }
 
+.card{
+  min-height: 13rem;
+}
+
 .menuIcon {
   color: var(--text-color);
 }
