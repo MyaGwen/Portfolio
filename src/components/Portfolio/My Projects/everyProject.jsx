@@ -61,7 +61,7 @@ export const recentProjects = [
   {
     image: gpt3,
     title: "GPT-3",
-    description: "A Modern UI/UX GPT-3 landing page",
+    description: "A Modern UI/UX GPT-3 landing page.",
     stack: "React JS",
     responsive: true,
     preview: "https://gpt-3-sigma-five.vercel.app/",
@@ -123,7 +123,7 @@ export const reactJs = [
   {
     image: gpt3,
     title: "GPT-3",
-    description: "A Modern UI/UX GPT-3 landing page",
+    description: "A Modern UI/UX GPT-3 landing page.",
     stack: "React JS",
     responsive: true,
     preview: "https://gpt-3-sigma-five.vercel.app/",
@@ -142,7 +142,7 @@ export const reactJs = [
   {
     image: starwars,
     title: "Star Wars Clone",
-    description: "A Star wars website clone",
+    description: "A Star wars website clone.",
     stack: "React JS, api",
     responsive: true,
     preview: "https://star-wars-movie-app.vercel.app/",
@@ -151,7 +151,7 @@ export const reactJs = [
   {
     image: googlereact,
     title: "Google clone",
-    description: "Google homepage clone",
+    description: "Google homepage clone.",
     stack: "React JS",
     responsive: true,
     preview: "https://google-homepage-clone-six.vercel.app/",
@@ -161,7 +161,7 @@ export const reactJs = [
     image: employeesearch,
     title: "Dummy employee search",
     description:
-      "Simple employee management app for effortless searching employees based on names or IDs.",
+      "Simple employee management app for effortlessly searching employees based on names or IDs.",
     stack: "React JS",
     responsive: true,
     preview: "https://react-profile-search.netlify.app/",
@@ -190,7 +190,7 @@ export const reactJs = [
   {
     image: reactinfo,
     title: "React Info Site",
-    description: "A website that contains fun facs about react",
+    description: "A website that contains fun facts about react.",
     stack: "React JS",
     responsive: true,
     preview: "https://react-info-site-psi.vercel.app/",
@@ -263,7 +263,7 @@ export const htmlCssJs = [
     image: BFF,
     title: "Man's BFF",
     description:
-      "Showcases heartwarming images of dogs, enabling users to click and view each image in a selected div.",
+      "Showcases heartwarming images of dogs, enabling users to click and view each image in a selected container.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://mans-bff-gallery.netlify.app/",
@@ -275,7 +275,7 @@ export const htmlCss = [
   {
     image: tailwind,
     title: "Scrimba tailwind landing page",
-    description: "A Scrimba tailwind landing page",
+    description: "A Scrimba tailwind landing page.",
     stack: "html, tailwind css",
     responsive: true,
     preview: "https://scrimba-tailwind-landing-site.vercel.app/",
@@ -284,7 +284,7 @@ export const htmlCss = [
   {
     image: professor,
     title: "Professor portfolio site",
-    description: "A fake professor's portfolio",
+    description: "A fake professor's portfolio.",
     stack: "html, css",
     responsive: true,
     preview:
@@ -293,7 +293,7 @@ export const htmlCss = [
   {
     image: birthday,
     title: "Birthday Gift Site",
-    description: "A basic birthday gift site",
+    description: "A basic birthday gift site.",
     stack: "html, css",
     responsive: true,
     preview: "https://birthday-gift-app.netlify.app/",
@@ -302,7 +302,7 @@ export const htmlCss = [
   {
     image: instagram,
     title: "instagram Clone",
-    description: "An instagram website clone",
+    description: "An instagram website clone.",
     stack: "html, css",
     responsive: false,
     preview: "https://instagram-replication.netlify.app/",
@@ -347,7 +347,7 @@ export const htmlCss = [
   {
     image: Messi,
     title: "google search result",
-    description: "A google search result of messi",
+    description: "A google search result of messi.",
     stack: "html, css",
     responsive: false,
     preview: "https://gilded-horse-a1a41a.netlify.app/",
@@ -356,7 +356,7 @@ export const htmlCss = [
   {
     image: bznessCard,
     title: "business card",
-    description: "A basic business card",
+    description: "A basic business card.",
     stack: "html, css",
     responsive: true,
     preview: "https://bsnesscard.netlify.app",
@@ -365,7 +365,7 @@ export const htmlCss = [
   {
     image: Travel,
     title: "travel website",
-    description: "A travel website",
+    description: "A travel website.",
     stack: "html, css",
     responsive: false,
     preview: "https://rainbow-clafoutis-d0bf85.netlify.app/",
