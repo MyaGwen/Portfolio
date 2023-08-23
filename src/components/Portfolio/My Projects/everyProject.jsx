@@ -144,7 +144,7 @@ export const reactJs = [
   {
     image: starwars,
     title: "Star Wars Clone",
-    description: "a Star wars website clone",
+    description: "A Star wars website clone",
     stack: "React JS, api",
     responsive: true,
     preview: "https://star-wars-movie-app.vercel.app/",
