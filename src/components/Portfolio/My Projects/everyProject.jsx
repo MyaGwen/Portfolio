@@ -151,7 +151,7 @@ export const reactJs = [
   {
     image: googlereact,
     title: "Google clone",
-    description: "Google hompage clone",
+    description: "Google homepage clone",
     stack: "React JS",
     responsive: true,
     preview: "https://google-homepage-clone-six.vercel.app/",
