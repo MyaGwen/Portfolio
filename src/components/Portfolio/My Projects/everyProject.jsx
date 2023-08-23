@@ -180,16 +180,16 @@ export const reactJs = [
   //   preview: "https://air-bnb-clone-indol.vercel.app/",
   //   code: "https://github.com/MyaGwen/AirBnb-clone/tree/main",
   // },
-  {
-    image: digital,
-    title: "Digital business card",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
-    stack: "React JS",
-    responsive: true,
-    preview: "https://digital-business-card-tan.vercel.app/",
-    code: "https://github.com/MyaGwen/Digital-business-card",
-  },
+  // {
+  //   image: digital,
+  //   title: "Digital business card",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+  //   stack: "React JS",
+  //   responsive: true,
+  //   preview: "https://digital-business-card-tan.vercel.app/",
+  //   code: "https://github.com/MyaGwen/Digital-business-card",
+  // },
   {
     image: reactinfo,
     title: "React Info Site",
