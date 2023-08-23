@@ -1,5 +1,6 @@
 import gameVault from "../../../../public/assets/images/gamevault.png";
-import loanwise from "../../../../public/assets/images/loanwise.png";
+import gameVault1 from "../../../../public/assets/images/gamevault1.png";
+import loanwise from "../../../../public/assets/images/loanwise1.png";
 import checkIt from "../../../../public/assets/images/checkit.png";
 import BFF from "../../../../public/assets/images/dog.png";
 import BB from "../../../../public/assets/images/BB scoreboard.png";
@@ -12,14 +13,14 @@ import tailwind from "../../../../public/assets/images/tailwind.png";
 import birthday from "../../../../public/assets/images/birthday.png";
 import nft from "../../../../public/assets/images/nft.png";
 import blackjack from "../../../../public/assets/images/blackjack.png";
-import restaurant from "../../../../public/assets/images/restaurant.png";
-import gpt3 from "../../../../public/assets/images/gpt3.png";
+import restaurant from "../../../../public/assets/images/restaurant1.png";
+import gpt3 from "../../../../public/assets/images/gpt31.png";
 import memepicker from "../../../../public/assets/images/memepicker.png";
-import memegen from "../../../../public/assets/images/memegen.png";
+import memegen from "../../../../public/assets/images/memegen1.png";
 import cookie from "../../../../public/assets/images/cookie.png";
-import starwars from "../../../../public/assets/images/starwars.png";
+import starwars from "../../../../public/assets/images/starwars1.png";
 import digital from "../../../../public/assets/images/digital.png";
-import moviesearch from "../../../../public/assets/images/moviesearch.png";
+import moviesearch from "../../../../public/assets/images/moviesearch1.png";
 import employeesearch from "../../../../public/assets/images/employeesearch.png";
 import googlereact from "../../../../public/assets/images/googlereact.png";
 import googlehtml from "../../../../public/assets/images/googlehtml.png";
@@ -78,7 +79,7 @@ export const recentProjects = [
     code: "https://github.com/MyaGwen/Meme-Generator",
   },
   {
-    image: gameVault,
+    image: gameVault1,
     title: "Game vault",
     description:
       "A platform where you can find links to play and download your favorite games.",
