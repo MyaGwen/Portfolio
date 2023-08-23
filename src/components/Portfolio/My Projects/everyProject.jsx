@@ -95,7 +95,7 @@ export const reactJs = [
     image: loanwise,
     title: "LoanWise",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "A dynamic web application designed to streamline loan management, offering an intuitive interface and personalized features for efficient financial management.",
     stack: "React JS, chakra ui",
     responsive: true,
     preview: "https://loanwise-b-team.vercel.app/",
@@ -124,8 +124,7 @@ export const reactJs = [
   {
     image: gpt3,
     title: "GPT-3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+    description: "A Modern UI/UX GPT-3 landing page",
     stack: "React JS",
     responsive: true,
     preview: "https://gpt-3-sigma-five.vercel.app/",
@@ -135,7 +134,7 @@ export const reactJs = [
     image: memegen,
     title: "Meme generator",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "A web app where you can easily create personalized memes by adding witty captions to the top and bottom, providing a hilarious touch to your favorite images.",
     stack: "React JS, api",
     responsive: true,
     preview: "https://meme-generator-theta-beryl.vercel.app/",
@@ -152,9 +151,8 @@ export const reactJs = [
   },
   {
     image: googlereact,
-    title: "Google homepage clone",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+    title: "Google clone",
+    description: "Google hompage clone",
     stack: "React JS",
     responsive: true,
     preview: "https://google-homepage-clone-six.vercel.app/",
@@ -164,7 +162,7 @@ export const reactJs = [
     image: employeesearch,
     title: "Dummy employee search",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "Simple employee management app for effortless searching employees based on names or IDs.",
     stack: "React JS",
     responsive: true,
     preview: "https://react-profile-search.netlify.app/",
@@ -193,8 +191,7 @@ export const reactJs = [
   {
     image: reactinfo,
     title: "React Info Site",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+    description: "A website that contains fun facs about react",
     stack: "React JS",
     responsive: true,
     preview: "https://react-info-site-psi.vercel.app/",
@@ -247,7 +244,7 @@ export const htmlCssJs = [
     image: checkIt,
     title: "check it",
     description:
-      "web app for creating and managing to-do lists, featuring add, edit, and delete functionalities with local storage support.",
+      "A web app for creating and managing to-do lists, featuring add, edit, and delete functionalities with local storage support.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://check-it-gamma.vercel.app/",
@@ -257,7 +254,7 @@ export const htmlCssJs = [
     image: BB,
     title: "Basketball Scoreboard",
     description:
-      "web app with interactive buttons to update and display scores for the home and guest teams.",
+      "A web app with interactive buttons to update and display scores for the home and guest teams.",
     stack: "html, css, js",
     responsive: true,
     preview: "https://bball-scorerecorder.netlify.app/",
