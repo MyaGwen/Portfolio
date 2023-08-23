@@ -32,8 +32,8 @@ export const recentProjects = [
     image: loanwise,
     title: "LoanWise",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
-    stack: "React JS, chakra ui, api",
+      "A dynamic web application designed to streamline loan management, offering an intuitive interface and personalized features for efficient financial management.",
+    stack: "React JS, chakra ui",
     responsive: true,
     preview: "https://loanwise-b-team.vercel.app/",
     code: "https://github.com/t1-loanwise/loanwise-b-team/tree/dev",
@@ -60,9 +60,8 @@ export const recentProjects = [
   },
   {
     image: gpt3,
-    title: "Modern Restaurant App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+    title: "GPT-3",
+    description: "A Modern UI/UX GPT-3 landing page",
     stack: "React JS",
     responsive: true,
     preview: "https://gpt-3-sigma-five.vercel.app/",
@@ -72,7 +71,7 @@ export const recentProjects = [
     image: memegen,
     title: "Meme generator",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi aperiam quia dolor",
+      "A web app where you can easily create personalized memes by adding witty captions to the top and bottom, providing a hilarious touch to your favorite images.",
     stack: "React JS, api",
     responsive: true,
     preview: "https://meme-generator-theta-beryl.vercel.app/",
