@@ -48,9 +48,9 @@ const ContactForm = () => {
         console.error("Error while submitting form:", error.message);
       }
       methods.reset();
-      setTimeout(() => {
+      setTimeout(() => {s
         setMessage("");
-      }, 10000);
+      }, 5000);
     }
   };
 
