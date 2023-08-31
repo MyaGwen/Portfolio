@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects({ item, darkMode }) {
   return (
@@ -23,7 +24,9 @@ export default function Projects({ item, darkMode }) {
           <span className="capitalize">
             <div className="gradient-text flex gap-2">
               {item.stack.map((stack, index) => (
-                <p className="uppercase" key={index}>{stack}</p>
+                <p className="uppercase" key={index}>
+                  {stack}
+                </p>
               ))}
             </div>
           </span>
@@ -34,25 +37,26 @@ export default function Projects({ item, darkMode }) {
           </span>
         </div>
         <div className="buttons mx-auto mt-auto">
-          {/* <button className="btn text-md font-bold py-2 px-4"> */}
-          <a
-            href={item.preview}
-            className="btn text-md font-bold py-2 px-4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Preview
-          </a>
-          {/* </button> */}
-          {item.code && (
-            <a
-              href={item.code}
-              className="btn text-md font-bold py-2 px-4"
+          <button className="btn text-md font-bold py-2 px-4">
+            <Link
+              href={item.preview}
               target="_blank"
-              rel="noopener noreferrer"
+              // rel="noopener noreferrer"
             >
-              Code
-            </a>
+              Preview
+            </Link>
+          </button>
+          {item.code && (
+            <button className="btn text-md font-bold py-2 px-4">
+              <Link
+                href={item.code}
+
+                target="_blank"
+                // rel="noopener noreferrer"
+              >
+                Code
+              </Link>
+            </button>
           )}
         </div>
       </div>

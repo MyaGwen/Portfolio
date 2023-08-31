@@ -331,11 +331,11 @@ nav {
   overflow: hidden;
 }
 
-.buttons a:hover {
+.buttons button:hover {
   color: black;
 }
 
-.buttons a:after {
+.buttons button:after {
   content: "";
   background: #fff;
   position: absolute;
@@ -348,7 +348,7 @@ nav {
   transition: all 0.5s;
 }
 
-.buttons a:hover:after {
+.buttons button:hover:after {
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
