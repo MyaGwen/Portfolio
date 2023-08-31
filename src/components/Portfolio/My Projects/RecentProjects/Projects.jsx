@@ -32,7 +32,9 @@ export default function Projects({ darkMode, showBtn }) {
           </Link>
         </div>
       </div>
-      <div className="projectContainer pt-3 pb-6">{recentProject}</div>
+      <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-3 pb-6">
+        {recentProject}
+      </div>
       <Link
         href="/allProjects"
         className="btn md:hidden self-center text-sm text-center font-bold py-3 px-12 w-full md:w-fit"
