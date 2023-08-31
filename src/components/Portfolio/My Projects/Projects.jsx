@@ -23,7 +23,7 @@ export default function Projects({ item, darkMode }) {
           <span className="capitalize">
             <div className="gradient-text flex gap-2">
               {item.stack.map((stack, index) => (
-                <p key={index}>{stack}</p>
+                <p className="uppercase" key={index}>{stack}</p>
               ))}
             </div>
           </span>
