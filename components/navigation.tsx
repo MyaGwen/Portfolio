@@ -56,8 +56,11 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold">
-            WEA
+          <Link
+            href="/"
+            className="text-4xl font-semibold mr-auto cursor-pointer"
+          >
+            M<span className="-ml-2">G</span>
           </Link>
 
           {/* Desktop Links */}
