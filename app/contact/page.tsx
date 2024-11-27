@@ -68,6 +68,7 @@ export default function Contact() {
       title: "Message sent!",
       description: "Thank you for reaching out. I'll get back to you soon.",
     });
+    console.log(values);
     // form.reset();
   }
 
