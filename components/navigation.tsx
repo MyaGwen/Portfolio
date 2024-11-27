@@ -7,12 +7,11 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./themeToggle";
 
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -53,7 +52,7 @@ export function Navigation() {
   );
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
+    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}

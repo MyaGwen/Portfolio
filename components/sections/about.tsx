@@ -17,7 +17,7 @@ export function AboutSection() {
   };
 
   return (
-<section className="py-20 bg-muted/30" id="about">
+<section className="py-20" id="about">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -44,9 +44,9 @@ export function AboutSection() {
             accessible, and impactful web solutions.
           </p>
           <p className="text-lg text-muted-foreground">
-            Whether it's building seamless interfaces, optimizing user
+            Whether it&apos;s building seamless interfaces, optimizing user
             experiences, or collaborating with teams to solve problems
-            creatively, I’m driven by the opportunity to make a meaningful
+            creatively, I&apos;m driven by the opportunity to make a meaningful
             impact in the digital world.
           </p>
         </div>

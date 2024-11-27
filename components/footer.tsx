@@ -49,9 +49,9 @@ export function Footer() {
   return (
     <div>
       {pathname === "/contact" ? (
-        <div className="flex">
+        <div className="flex flex-col">
+          <Separator />
           <div className="container mx-auto">
-            <Separator />
             <div className="flex flex-col py-8 md:flex-row  mx-auto gap-6 justify-between items-center">
               <p>
                 © {new Date().getFullYear()} Wendy Edem Ahadome ——{" "}
@@ -79,7 +79,7 @@ export function Footer() {
           </div>
         </div>
       ) : (
-        <div className="pt-12 space-y-20">
+        <div className="space-y-20">
           <Separator />
           <div className="px-4 lg:max-w-6xl mx-auto">
             <h1 className="text-xl text-center md:text-4xl font-semibold">

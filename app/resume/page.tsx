@@ -3,25 +3,37 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { BriefcaseIcon, GraduationCapIcon } from "lucide-react";
+import { BriefcaseIcon, GraduationCapIcon, BookIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const experience = [
   {
     title: "Senior Frontend Developer",
     company: "TechCorp",
     period: "2022 - Present",
-    description: "Led the development of multiple high-impact web applications.",
+    description:
+      "Led the development of multiple high-impact web applications.",
   },
   {
     title: "Frontend Developer",
     company: "WebSolutions",
     period: "2020 - 2022",
-    description: "Developed and maintained client websites using modern technologies.",
+    description:
+      "Developed and maintained client websites using modern technologies.",
   },
   // Add more experience...
 ];
 
 const education = [
+  {
+    degree: "Bachelor's in Political Science",
+    school: "University of Ghana",
+    period: "2016 - 2020",
+  },
+  // Add more education...
+];
+
+const certifications = [
   {
     degree: "Bachelor's in Political Science",
     school: "University of Ghana",
@@ -89,7 +101,7 @@ export default function Resume() {
 
           <section>
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <GraduationCapIcon className="w-6 h-6 mr-2" />
+              <BookIcon className="w-6 h-6 mr-2" />
               Education
             </h2>
             <div className="space-y-4">
@@ -114,6 +126,33 @@ export default function Resume() {
           </section>
 
           <section>
+            <h2 className="text-2xl font-bold mb-6 flex items-center">
+              <GraduationCapIcon className="w-6 h-6 mr-2" />
+              Education
+            </h2>
+            <div className="space-y-4">
+              {certifications.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                >
+                  <Card>
+                    <CardContent className="flex flex-col gap-6 p-6">
+                      <h3 className="text-xl font-bold mb-1">{item.degree}</h3>
+                      <p className="text-muted-foreground">
+                        {item.school} • {item.period}
+                      </p>
+                      <Button className="mr-auto px-8 rounded-full">View Certificate</Button>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
+          <section>
             <h2 className="text-2xl font-bold mb-6">Skills</h2>
             <motion.div
               initial={{ opacity: 0 }}
@@ -121,7 +160,7 @@ export default function Resume() {
               transition={{ duration: 0.8 }}
               className="flex flex-wrap gap-2"
             >
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <Badge
                   key={skill}
                   variant="secondary"
