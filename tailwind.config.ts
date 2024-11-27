@@ -1,24 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss";
+
+export default {
     darkMode: ["class"],
     content: [
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {
-  		fontFamily: {
-  			urban: ["var(--font-urban)"]
-  		},
   		colors: {
-  			dark: '#2b283a',
-  			light: '#fff',
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			primaryDark: '#58E6D9',
-  			wet: '#000',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -28,6 +19,10 @@ module.exports = {
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
+  			},
+  			primary: {
+  				DEFAULT: 'hsl(var(--primary))',
+  				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -56,9 +51,6 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
-  		animation: {
-  			'spin-slow': 'spin 8s linear infinite'
-  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -67,4 +59,4 @@ module.exports = {
   	}
   },
   plugins: [require("tailwindcss-animate")],
-};
+} satisfies Config;

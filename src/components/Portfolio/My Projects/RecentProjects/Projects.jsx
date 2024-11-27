@@ -20,7 +20,7 @@ export default function Projects({ darkMode, showBtn }) {
       <div className="title">
         <div className="allP flex justify-between content-center gap-3">
           <Title title={"Recent Projects"} />
-          <Link
+          {/* <Link
             href="/allProjects"
             className="hidden self-center capitalize md:flex justify-between content-center gap-3 group hover:gap-5 hover:transition-gap"
           >
@@ -29,7 +29,7 @@ export default function Projects({ darkMode, showBtn }) {
               className="self-center group:group-hover:ml-2"
               size={30}
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-3 pb-6">
