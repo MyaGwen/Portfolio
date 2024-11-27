@@ -92,6 +92,13 @@ export function ArticlesSection() {
                     <span>{article.readTime}</span>
                   </div>
                   <div className="text-lg font-bold">{article.title}</div>
+                  <Button
+                    variant="ghost"
+                    className="group bg-0 hover:bg-0 p-0 text-foreground"
+                  >
+                    Read More
+                    <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
                 </div>
               </Link>
             </motion.div>
