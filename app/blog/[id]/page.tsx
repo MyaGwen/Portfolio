@@ -1,7 +1,9 @@
 import BlogPost from "@/components/blog/blog-post";
 import { posts } from "@/lib/blog-data";
 
-export function generateStaticParams() {
+// Make sure generateStaticParams is an async function and returns a promise
+export async function generateStaticParams() {
+  // Return a promise that resolves to an array of objects
   return Object.keys(posts).map((id) => ({
     id,
   }));
