@@ -13,36 +13,7 @@ import { ExternalLinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
-
-const projects = [
-  {
-    title: "E-commerce Platform",
-    description:
-      "A modern and scalable e-commerce platform developed using Next.js and integrated with Stripe for seamless payment processing.",
-    image:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80",
-    tags: ["Next.js", "Stripe", "TailwindCSS"],
-    link: "#", // link to project details
-  },
-  {
-    title: "Healthcare Dashboard",
-    description:
-      "An intuitive, data-driven healthcare dashboard tailored to improve decision-making for healthcare professionals.",
-    image:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "TypeScript", "D3.js"],
-    link: "#", // link to project details
-  },
-  {
-    title: "Social Media Analytics",
-    description:
-      "A real-time analytics platform for managing social media performance, helping brands make data-driven decisions.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    tags: ["Vue.js", "Firebase", "Chart.js"],
-    link: "#", // link to project details
-  },
-];
+import { featuredProjects } from "@/lib/data";
 
 export function CaseStudiesSection() {
   const [ref, inView] = useInView({
@@ -68,7 +39,7 @@ export function CaseStudiesSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
@@ -88,7 +59,7 @@ export function CaseStudiesSection() {
                 <CardContent className="p-6">
                   <CardTitle className="mb-2">{project.title}</CardTitle>
                   <CardDescription className="mb-4">
-                    {project.description}
+                    {project.excerpt}
                   </CardDescription>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
@@ -100,7 +71,10 @@ export function CaseStudiesSection() {
                       </span>
                     ))}
                   </div>
-                  <Link href={project.link} className="w-full group">
+                  <Link
+                    href={`/case-studies/${project.slug}`}
+                    className="w-full group"
+                  >
                     <Button className="rounded-full">
                       View Project
                       <ExternalLinkIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

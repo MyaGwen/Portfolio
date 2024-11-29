@@ -23,11 +23,11 @@ export function HeroSection() {
       </video>
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 px-4 py-1 md:px-16 flex flex-col gap-8 container">
-        <div className="flex flex-col gap-4 justify-start max-w-4xl">
+        <div className="flex flex-col gap-4 justify-start max-w-4xl text-white">
           <h1 className="font-semibold capitalize text-3xl md:text-6xl lg:text-7xl">
             Frontend Developer.
           </h1>
-          <p className="text-2xl md:text-5xl lg:text-6xl text-secondary">
+          <p className="text-2xl md:text-5xl lg:text-6xl">
             I build beautiful, accessible and responsive interfaces.
           </p>
         </div>
@@ -49,9 +49,9 @@ export function HeroSection() {
             size="lg"
             variant="outline"
             className="rounded-full"
-            onClick={() => (window.location.href = "/contact")}
+            onClick={() => (window.location.href = "/resume")}
           >
-            Let’s Collaborate
+            My Resume
           </Button>
         </motion.div>
       </div>

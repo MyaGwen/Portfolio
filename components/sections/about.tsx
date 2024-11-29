@@ -17,7 +17,7 @@ export function AboutSection() {
   };
 
   return (
-<section className="py-20" id="about">
+    <section className="py-20" id="about">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -30,24 +30,19 @@ export function AboutSection() {
         <div className="text-center md:text-left space-y-6 w-full md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Who I Am</h2>
           <p className="text-lg text-muted-foreground">
-            Hello! I&apos;m{" "}
-            <span className="text-foreground font-semibold">Wendy Edem Ahadome</span>,
-            a passionate Frontend Developer who thrives on blending aesthetics
-            with functionality. Based in Accra, Ghana, I specialize in crafting
-            digital experiences that are not only visually stunning but also
-            user-focused.
+            Hi, I&apos;m{" "}
+            <span className="text-foreground font-semibold">
+              Wendy Edem Ahadome
+            </span>
+            , a Frontend Developer from Accra, Ghana. I love creating beautiful,
+            user-focused digital experiences that merge design and
+            functionality.
           </p>
           <p className="text-lg text-muted-foreground">
-            My journey into tech has been one of curiosity and continuous
-            learning. With a keen eye for design and a deep understanding of
-            modern technologies, I transform complex ideas into intuitive,
-            accessible, and impactful web solutions.
-          </p>
-          <p className="text-lg text-muted-foreground">
-            Whether it&apos;s building seamless interfaces, optimizing user
-            experiences, or collaborating with teams to solve problems
-            creatively, I&apos;m driven by the opportunity to make a meaningful
-            impact in the digital world.
+            With a passion for learning and a knack for problem-solving, I turn
+            complex ideas into sleek, impactful web solutions. I aim to deliver
+            seamless interfaces and optimized user experiences that make a
+            difference.
           </p>
         </div>
 

@@ -1,12 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Urbanist } from 'next/font/google';  // Import Urbanist font
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navigation } from '@/components/navigation';
 import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 
-const inter = Inter({ subsets: ['latin'] });
+// Load the Urbanist font
+const urbanist = Urbanist({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Wendy Edem Ahadome - Frontend Developer',
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={urbanist.className}>  {/* Apply Urbanist font */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +31,7 @@ export default function RootLayout({
           <Navigation />
           {children}
           <Toaster />
-          <Footer/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

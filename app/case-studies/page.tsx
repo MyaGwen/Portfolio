@@ -1,39 +1,22 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
-
-const projects = [
-  {
-    id: "ecommerce-platform",
-    title: "E-commerce Platform",
-    description: "A modern e-commerce platform built with Next.js and Stripe.",
-    date: "April 10, 2024",
-    categories: ["E-commerce", "Web Development"],
-    tags: ["Next.js", "Stripe", "TailwindCSS"],
-  },
-  {
-    id: "healthcare-dashboard",
-    title: "Healthcare Dashboard",
-    description: "An intuitive dashboard for healthcare professionals.",
-    date: "April 5, 2024",
-    categories: ["Healthcare", "Analytics"],
-    tags: ["React", "TypeScript", "D3.js"],
-  },
-];
-
-const categories = ["All", "E-commerce", "Healthcare", "Analytics", "Web Development"];
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { caseStudies, projectCategories } from "@/lib/data";
+import Image from "next/image";
 
 export default function CaseStudies() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects =
     activeCategory === "All"
-      ? projects
-      : projects.filter((project) => project.categories.includes(activeCategory));
+      ? caseStudies
+      : caseStudies.filter((project) =>
+          project.categories.includes(activeCategory)
+        );
 
   return (
     <div className="min-h-screen pt-24 pb-16">
@@ -46,61 +29,68 @@ export default function CaseStudies() {
         >
           <h1 className="text-4xl font-bold mb-4">Case Studies</h1>
           <p className="text-lg text-muted-foreground">
-            Real-world projects and their impacts.
+            Dive into the details of real-world projects and their impact.
           </p>
         </motion.div>
 
-        {/* Categories */}
+        {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-8 justify-center">
-          {categories.map((category, index) => (
-            <motion.div
+          {projectCategories.map((category, index) => (
+            <motion.button
               key={category}
+              onClick={() => setActiveCategory(category)}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
+              className={`py-2 px-4 text-sm rounded-lg ${
+                activeCategory === category
+                  ? "bg-primary text-white"
+                  : "bg-muted text-foreground"
+              } hover:scale-105 transition-transform`}
             >
-              <Badge
-                variant={activeCategory === category ? "default" : "secondary"}
-                className={`text-base py-2 px-4 cursor-pointer ${
-                  activeCategory === category ? "bg-primary" : ""
-                }`}
-                onClick={() => setActiveCategory(category)}
-              >
-                {category}
-              </Badge>
-            </motion.div>
+              {category}
+            </motion.button>
           ))}
         </div>
 
-        {/* Case Studies */}
+        {/* Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <Link href={`/case-studies/${project.id}`} key={project.id}>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-              >
-                <Card className="h-full hover:shadow-lg transition-all duration-300">
+            <motion.div
+              key={project.slug}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+            >
+              <Link href={`/case-studies/${project.slug}`}>
+                <Card className="h-full hover:shadow-lg transition-transform duration-300 group">
                   <CardHeader>
-                    <div className="flex justify-between items-center text-sm text-muted-foreground mb-2">
-                      <span>{project.date}</span>
-                    </div>
-                    <CardTitle className="mb-2">{project.title}</CardTitle>
-                    <p className="text-muted-foreground">{project.description}</p>
+                    <Image
+                      src={project.image}
+                      width={800}
+                      height={400}
+                      alt={project.title}
+                      className="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    />
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="p-4">
+                    <CardTitle className="text-lg font-bold mb-2">
+                      {project.title}
+                    </CardTitle>
+                    <p className="text-muted-foreground mb-4">
+                      {project.excerpt}
+                    </p>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
-                        <Badge key={tag} variant="outline">
+                        <Badge key={tag} variant="secondary">
                           {tag}
                         </Badge>
                       ))}
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>
