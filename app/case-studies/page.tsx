@@ -42,9 +42,9 @@ export default function CaseStudies() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`py-2 px-4 text-sm rounded-lg ${
+              className={`py-2 px-4 text-sm text-base rounded-lg ${
                 activeCategory === category
-                  ? "bg-primary text-white"
+                  ? "bg-primary"
                   : "bg-muted text-foreground"
               } hover:scale-105 transition-transform`}
             >

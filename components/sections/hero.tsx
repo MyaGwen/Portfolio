@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowDownIcon } from "lucide-react";
+import { ArrowDownIcon, GraduationCapIcon } from "lucide-react";
 
 export function HeroSection() {
   const scrollToProjects = () => {
@@ -48,10 +48,11 @@ export function HeroSection() {
           <Button
             size="lg"
             variant="outline"
-            className="rounded-full"
+            className="group rounded-full"
             onClick={() => (window.location.href = "/resume")}
           >
             My Resume
+            <GraduationCapIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
           </Button>
         </motion.div>
       </div>

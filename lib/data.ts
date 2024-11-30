@@ -1,3 +1,6 @@
+import beasolution from '@/public/images/projects/beasolution.png'
+
+
 export interface BlogPost {
     slug: string;
     title: string;
@@ -123,9 +126,9 @@ export const caseStudies = [
     title: "Be A Solution - Empowering Communities",
     description: "A web platform designed to empower and educate communities about sustainable solutions, offering educational articles, tutorials, and a forum for growth.",
     excerpt: "Be A Solution is a platform providing accessible resources for community empowerment, featuring articles, tutorials, and a community forum for sustainable change.",
-    tags: ["E-commerce", "Community", "Web Development"],
+    tags: ['Next Js',"Non-Profit", "Community"],
     categories: ["Website"],
-    image: "https://images.unsplash.com/photo-1578907405012-bfbc96f1a91d?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDkxfHxwbGF0Zm9ybXxlbnwwfDB8fHx8&ixid=rb-1.2.1&q=80&w=1080",
+    image: 'images/projects/beasolution.png',
     link: "https://be-a-solution-new-nwz5.vercel.app/",
     slug: "be-a-solution",
     problem: "Many communities lack accessible resources and tools for sustainable development.",
@@ -137,7 +140,7 @@ export const caseStudies = [
     title: "Credit Facility Hub - Ghamfin",
     excerpt: "Streamlining access to credit services for Ghanaians with a user-friendly platform, helping manage financial needs with ease.",
     image: "https://images.unsplash.com/photo-1506748686218-84b0bc4a0b94?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "TailwindCSS", "Financial Services"],
+    tags: ["Financial Services"],
     categories: ["Dashboard", "Website"],
     link: "https://cfh.ghamfin.org/",
     problem: "Existing platforms lacked accessibility for Ghanaians to credit services.",

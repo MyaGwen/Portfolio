@@ -55,6 +55,11 @@ const education = [
     school: "Stutern (Remote)",
     period: "September 2022 – September 2023",
   },
+  {
+    degree: "AWS Cloud Practicioner",
+    school: "Amalitech Ghana",
+    period: "June 2023",
+  },
 ];
 
 const skills = [
@@ -65,6 +70,7 @@ const skills = [
   "HTML5",
   "CSS3",
   "Tailwind CSS",
+  'AWS Services',
   "WordPress",
   "Git Version Control",
   "Responsive Design",

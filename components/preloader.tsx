@@ -10,10 +10,10 @@ const greetings = [
   "Ciao",
   "Olá",
   "Hallo",
-  'やあ',
-  'Hallå',
-  'Guten tag',
-  'Akwaaba',
+  "やあ",
+  "Hallå",
+  "Guten tag",
+  "Akwaaba",
 ];
 
 export function Preloader() {
@@ -47,8 +47,9 @@ export function Preloader() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="text-4xl md:text-6xl font-bold"
+            className="text-4xl md:text-6xl flex gap-3 items-center font-bold"
           >
+            <span className="h-4 w-4 rounded-full bg-green-500"></span>
             {greetings[currentIndex]}
           </motion.span>
         </motion.div>
