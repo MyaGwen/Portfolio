@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { caseStudies } from "@/lib/data";
-import { ArrowLeftIcon } from "lucide-react";
+import { ArrowLeftIcon, ExternalLinkIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -33,7 +33,9 @@ export default function CaseStudies() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+          <h1 className="text-2xl md:text-4xl font-bold mb-4">
+            {project.title}
+          </h1>
           <div className="flex flex-wrap gap-2 mb-8">
             {project.tags.map((tag) => (
               <Badge key={tag} variant="secondary">
@@ -54,10 +56,6 @@ export default function CaseStudies() {
               <div className="space-y-6">
                 <div>
                   <h2 className="text-2xl font-bold mb-2">Problem</h2>
-                  <Link href={project.link}>view</Link>
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold mb-2">Problem</h2>
                   <p>{project.problem}</p>
                 </div>
                 <div>
@@ -67,6 +65,16 @@ export default function CaseStudies() {
                 <div>
                   <h2 className="text-2xl font-bold mb-2">Impact</h2>
                   <p>{project.impact}</p>
+                </div>
+                <div className="flex flex-col items-start">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    className="rounded-full bg-white px-6 py-1 flex items-center text-black"
+                  >
+                    Visit website
+                    <ExternalLinkIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </div>
               </div>
             </CardContent>

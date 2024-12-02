@@ -256,7 +256,7 @@ export const caseStudies = [
     id: "be-a-solution",
     title: "Be A Solution - Empowering Communities",
     description: "A web platform designed to empower and educate communities about sustainable solutions, offering educational articles, tutorials, and a forum for growth.",
-    excerpt: "Be A Solution is a platform providing accessible resources for community empowerment, featuring articles, tutorials, and a community forum for sustainable change.",
+    excerpt: "Be A Solution is a platform providing accessible resources for community children education.",
     tags: ['Next Js',"Non-Profit", "Community"],
     categories: ["Website"],
     image: '/images/projects/beasolution.png',

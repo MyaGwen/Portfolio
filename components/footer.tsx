@@ -85,20 +85,20 @@ export function Footer() {
             <h1 className="text-xl text-center md:text-4xl font-semibold">
               Let&apos;s work together to create something amazing!
             </h1>
-            <div className="pt-10 flex items-center justify-center gap-8">
+            <div className="pt-10 px-4 flex items-center justify-center gap-8">
               <Link
                 className="block"
                 href="https://calendly.com/wendyyahadome/15min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="rounded-full group flex justify-center items-center gap-2 bg-primary px-8 py-3">
+                <Button className="rounded-full group flex justify-center items-center gap-2 bg-primary px-6 py-3">
                   <PhoneCallIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
                   Book a call
                 </Button>
               </Link>
               <Link className="block" href="/contact">
-                <Button className="rounded-full group flex justify-center items-center gap-2 bg-primary px-8 py-3">
+                <Button className="rounded-full group flex justify-center items-center gap-2 bg-primary px-6 py-3">
                   <MessageSquareIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
                   Contact me
                 </Button>
