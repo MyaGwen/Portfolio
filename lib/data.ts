@@ -1,6 +1,3 @@
-import beasolution from '@/public/images/projects/beasolution.png'
-
-
 export interface BlogPost {
     slug: string;
     title: string;
@@ -128,7 +125,7 @@ export const caseStudies = [
     excerpt: "Be A Solution is a platform providing accessible resources for community empowerment, featuring articles, tutorials, and a community forum for sustainable change.",
     tags: ['Next Js',"Non-Profit", "Community"],
     categories: ["Website"],
-    image: 'images/projects/beasolution.png',
+    image: '/images/projects/beasolution.png',
     link: "https://be-a-solution-new-nwz5.vercel.app/",
     slug: "be-a-solution",
     problem: "Many communities lack accessible resources and tools for sustainable development.",
