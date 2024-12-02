@@ -58,7 +58,7 @@ const education = [
   {
     degree: "AWS Cloud Practicioner",
     school: "Amalitech Ghana",
-    period: "June 2023",
+    period: "June 2024",
   },
 ];
 

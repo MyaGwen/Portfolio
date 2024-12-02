@@ -54,27 +54,27 @@ export default function BlogPost() {
             alt={post.title}
             width={800}
             height={400}
-            className="w-full h-64 object-cover rounded-lg mb-6"
+            className="w-full h-96 object-cover rounded-lg mb-6"
           />
 
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex flex-col gap-4">
               {post.content.map((section, index) => (
                 <div key={index} className="space-y-4">
                   <h2 className="text-2xl font-bold mb-2">{section.heading}</h2>
-                  <p className="text-gray-700">{section.text}</p>
-                  <div className="flex">
+                  <p className="text-foreground">{section.text}</p>
+                  <div>
                     {section.media && (
-                      <div>
+                      <div className="flex flex-col">
                         <Image
                           src={section.media.url}
                           alt={section.media.alt}
                           width={800}
-                          height={200}
-                          style={{ maxWidth: "100%" }}
-                        />
+                          height={100}
+                          className="w-full h-96 object-contain rounded-lg mb-6"
+                          />
                         {section.media.caption && (
-                          <p style={{ fontStyle: "italic" }}>
+                          <p className="italic mt-2">
                             {section.media.caption}
                           </p>
                         )}

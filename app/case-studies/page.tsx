@@ -36,20 +36,22 @@ export default function CaseStudies() {
         {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-8 justify-center">
           {projectCategories.map((category, index) => (
-            <motion.button
-              key={category}
+            <motion.div
+            key={category}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.1 }}
+          >
+            <Badge
+              variant={activeCategory === category ? "default" : "secondary"}
+              className={`text-base py-2 px-4 cursor-pointer ${
+                activeCategory === category ? "bg-primary" : ""
+              }`}
               onClick={() => setActiveCategory(category)}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`py-2 px-4 text-sm text-base rounded-lg ${
-                activeCategory === category
-                  ? "bg-primary"
-                  : "bg-muted text-foreground"
-              } hover:scale-105 transition-transform`}
             >
               {category}
-            </motion.button>
+            </Badge>
+          </motion.div>
           ))}
         </div>
 

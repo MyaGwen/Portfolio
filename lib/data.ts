@@ -12,7 +12,8 @@ export interface BlogPost {
   }
 
 
-  export const blogCategories = ["All", "Technology", "Web Development", "Frontend", "CSS", "UI Design", "Humor", "Productivity", "Trends"];
+  export const blogCategories = ["All", "Technology", "Web Development", "Frontend","Humor"];
+  // export const blogCategories = ["All", "Technology", "Web Development", "Frontend", "CSS", "UI Design", "Humor", "Productivity", "Trends"];
 
 
 export const blogPosts = [
@@ -22,7 +23,7 @@ export const blogPosts = [
     date: "March 20, 2024",
     readTime: "8 min read",
     author: "Wendy Edem Ahadome",
-    categories: ["Technology", "Frontend", "Humor"],
+    categories: ["Technology", "Frontend", "Humor", "Web Development"],
     tags: ["Frontend", "Developer Life", "Ghana"],
     content: [
       {
@@ -30,7 +31,7 @@ export const blogPosts = [
         text: "Being a frontend developer in Ghana is a rollercoaster ride. On one hand, there's the thrill of creating visually stunning interfaces. On the other, there’s the never-ending battle with unreliable internet. When you finally hit deploy, the lights flicker, and you're left wondering: Is this debugging or destiny?",
         media: {
           type: "image",
-          url: "https://example.com/developer-struggles.jpg",
+          url: "/images/memes/explode.webp",
           alt: "A developer looking frustrated",
           caption: "Debugging life: WiFi, JavaScript, and power cuts.",
         },
@@ -40,7 +41,7 @@ export const blogPosts = [
         text: "Your day starts with a jolt—not from coffee, but from the sound of a generator. As you sip your morning tea, you pray the power holds long enough to finish your sprint tasks. At 10 AM, you lose connection mid-Zoom call. By noon, you’ve written code so optimized it works offline because... well, necessity breeds invention.",
         media: {
           type: "image",
-          url: "https://example.com/coffee-and-code.jpg",
+          url: "/images/memes/coffee.webp",
           alt: "A laptop, coffee mug, and notebooks",
           caption: "Morning routines: caffeine and creative problem-solving.",
         },
@@ -50,17 +51,17 @@ export const blogPosts = [
         text: "We don’t just use tools; we *adapt* tools. When npm fails, you manually copy-paste node_modules folders. When the internet crawls, you write CSS in your head. You may not have all the fancy setups, but your determination is unmatched.",
         media: {
           type: "gif",
-          url: "https://media.giphy.com/media/funny-dev-tools/giphy.gif",
+          url: "/images/memes/panic.webp",
           alt: "A developer using creative tools",
           caption: "If Stack Overflow is down, we panic.",
         },
       },
       {
         heading: "Why We Love It",
-        text: "Despite the challenges, nothing beats the satisfaction of seeing your app work. When users compliment your interface, it feels like all the power cuts were worth it. And yes, the jollof-powered brainstorming sessions add their own flavor to every line of code.",
+        text: "Despite the challenges, nothing beats the satisfaction of seeing your app work. When users compliment your interface, it feels like all the power cuts were worth it. And yes, the food-powered brainstorming sessions add their own flavor to every line of code.",
         media: {
           type: "image",
-          url: "/images/memes/whatever.webp",
+          url: "/images/memes/food.webp",
           // url: "https://example.com/jollof-code.jpg",
           alt: "A plate of jollof rice next to a laptop",
           caption: "Jollof: the unofficial fuel for developers in Ghana.",
@@ -71,47 +72,65 @@ export const blogPosts = [
         text: "Being a frontend developer in Ghana isn’t just about writing code. It’s about resilience, creativity, and embracing chaos. Whether it’s debugging WiFi or flexbox, every challenge is a chance to grow. And in the end, you learn to laugh at the struggles and cherish the wins.",
         media: {
           type: "gif",
-          url: "https://media.giphy.com/media/dev-happy/giphy.gif",
-          alt: "A happy developer celebrating success",
+          url: "/images/memes/celebrate.gif",
+                    alt: "A happy developer celebrating success",
           caption: "Deployment successful: Time to celebrate!",
         },
       },
     ],
-    image: "https://images.unsplash.com/photo-1506748686218-84b0bc4a0b94?crop=entropy&cs=tinysrgb&fit=max&q=80&w=1080",
+    image:  '/images/blog/blog1.avif'
   }
 ,  
-  {
-    slug: "why-your-business-needs-a-frontend-developer",
-    title: "Why Your Business Needs a Frontend Developer: A Case for Pixel-Perfect Design",
-    date: "March 22, 2024",
-    readTime: "5 min read",
-    author: "Wendy Edem Ahadome",
-    categories: ["Technology", "Business", "Design"],
-    tags: ["Frontend", "Business Growth", "Web Design"],
-    content: [
-      {
-        heading: "Introduction",
-        text: "A frontend developer isn’t just someone who makes things look good—they ensure your website feels good too. It's the digital handshake your business gives to customers.",
-        media: {
-          type: "image",
-          url: "https://example.com/frontend-developer.jpg",
-          alt: "Frontend developer working on a laptop",
-          caption: "Because 'hire me' emails are the new love letters.",
-        },
+{
+  slug: "why-your-business-needs-a-frontend-developer",
+  title: "Why Your Business Needs a Frontend Developer: A Case for Pixel-Perfect Design",
+  date: "March 22, 2024",
+  readTime: "5 min read",
+  author: "Wendy Edem Ahadome",
+  categories: ["Technology", "Business", "Frontend", "Web Development"],
+  tags: ["Frontend", "Business Growth", "Web Design"],
+  content: [
+    {
+      heading: "Introduction",
+      text: "A frontend developer isn’t just someone who makes things look good—they ensure your website feels good too. Think of them as the digital architects who make your business's virtual home inviting, functional, and accessible.",
+      media: {
+        type: "image",
+        url: "/images/memes/yes.gif",
+        alt: "Frontend developer working on a laptop",
+        caption: "When your website's 'handshake' feels like a confident grip, not a limp fish.",
       },
-      {
-        heading: "Business Impact",
-        text: "Without a good frontend, even the best backend features can go unnoticed. Imagine having a great product hidden in a poorly designed store.",
-        media: {
-          type: "image",
-          url: "https://example.com/bad-storefront.jpg",
-          alt: "An empty store with poor lighting",
-          caption: "Great product, terrible presentation. Don't let this be you!",
-        },
+    },
+    {
+      heading: "The Magic of the Frontend",
+      text: "Frontend developers bring life to static mockups with animations, responsiveness, and interactivity. They don’t just code; they tell stories that connect your brand to your audience.",
+    },
+    {
+      heading: "Business Impact",
+      text: "Without a polished frontend, even the best backend features can go unnoticed. Accessibility, first impressions, and trust are all tied to design quality.",
+      media: {
+        type: "image",
+        url: "/images/memes/find.gif",
+        alt: "When you finally find the perfect frontend developer.",
+        caption: "Great product, terrible storefront. Don’t let this be your website.",
       },
-    ],
-    image: "https://images.unsplash.com/photo-1556767576-49f2f5fcbacd?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDh8fHdlYiUyMGRlc2lnbnxlbnwwfHx8fDE2NjA3NDE2MTQ&ixlib=rb-1.2.1&q=80&w=1080",
-  },
+    },
+    {
+      heading: "Frontend and Business Growth",
+      text: "A frontend developer optimizes your site for speed, SEO, and user experience, ensuring your business thrives online. A one-second delay in load time could reduce conversions by 7%.",
+      media: {
+        type: "image",
+        url: "/images/memes/cheers.gif",
+        alt: "When your website loads fast and conversions skyrocket",
+        caption: "Fast websites make happy users and better business.",
+      },
+    },
+    {
+      heading: "Conclusion",
+      text: "In today’s digital-first world, a frontend developer is essential. They transform your business goals into engaging, accessible, and impactful digital experiences. Don’t just settle for a website—invest in a frontend developer who ensures your site wows users from the first click.",
+    },
+  ],
+  image: "/images/blog/blog2.avif",
+},
   {
     slug: "dark-mode-or-light-mode",
     title: "Dark Mode or Light Mode? The Eternal Struggle",
@@ -126,7 +145,7 @@ export const blogPosts = [
         text: "Ever scrolled through your favorite app and found yourself fumbling to adjust the brightness? The Dark Mode vs. Light Mode debate has divided developers, designers, and users alike into two camps, both passionate about their preferred UI vibe.",
         media: {
           type: "image",
-          url: "https://images.unsplash.com/photo-1517430816045-df4b7de27e42?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGRhcmsgbW9kZXxlbnwwfHx8fDE2NjA3NDE2MTQ&ixlib=rb-1.2.1&q=80&w=1080",
+          url: "/images/memes/dark.webp",
           alt: "Dark and light mode settings on a smartphone",
           caption: "Because choosing between Dark Mode and Light Mode is the real personality test.",
         },
@@ -146,7 +165,7 @@ export const blogPosts = [
         text: "The real solution? Let the user decide. Offering a Dark Mode toggle ensures everyone gets their way. And don’t forget to save the preference in local storage.",
         media: {
           type: "gif",
-          url: "https://media.giphy.com/media/3oEjHGrVGrqgFFknfO/giphy.gif",
+          url: "/images/memes/hs.webp",
           alt: "A person flipping a light switch repeatedly",
           caption: "Dark Mode at night: Perfect. Light Mode at night: Betrayal.",
         },
@@ -251,7 +270,7 @@ export const caseStudies = [
     slug: "cfh-ghamfin",
     title: "Credit Facility Hub - Ghamfin",
     excerpt: "Streamlining access to credit services for Ghanaians with a user-friendly platform, helping manage financial needs with ease.",
-    image: "https://images.unsplash.com/photo-1506748686218-84b0bc4a0b94?auto=format&fit=crop&w=800&q=80",
+    image:  '/images/projects/ghamfin.png',
     tags: ["Financial Services"],
     categories: ["Dashboard", "Website"],
     link: "https://cfh.ghamfin.org/",
@@ -263,7 +282,7 @@ export const caseStudies = [
     slug: "abidee-canada",
     title: "Abidee Canada",
     excerpt: "A vibrant platform for showcasing immigration services tailored for Canadians, providing resources for newcomers.",
-    image: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=800&q=80",
+    image:  '/images/projects/abideecanada.png',
     tags: ["WordPress", "CMS", "Immigration"],
     categories: ["E-Commerce", "Website"],
     link: "https://abideecanada.com/",
@@ -275,7 +294,8 @@ export const caseStudies = [
     slug: "jesus-centered-church",
     title: "Jesus Centered Church",
     excerpt: "Connecting congregants with sermons and events through a spiritual digital platform that promotes spiritual growth.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+    image:  '/images/projects/jesuscenteredchurch.png',
+    // image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
     tags: ["Community Engagement", "WordPress", "UI Design"],
     categories: ["Website"],
     link: "https://jesuscenteredchurch.com/",
@@ -287,7 +307,7 @@ export const caseStudies = [
     slug: "bright-martey",
     title: "Bright Martey Portfolio",
     excerpt: "A portfolio site showcasing creative career achievements with stunning visuals, highlighting design and web development skills.",
-    image: "https://images.unsplash.com/photo-1581091012184-8c9cdbb4e5cf?auto=format&fit=crop&w=800&q=80",
+    image:  '/images/projects/brightmartey.png',
     tags: ["Portfolio", "Personal Branding", "Web Design"],
     categories: ["Website"],
     link: "https://brightmartey.com/",
@@ -299,7 +319,7 @@ export const caseStudies = [
     slug: "testimony-tabernacle",
     title: "Testimony Tabernacle",
     excerpt: "A platform to connect members of Testimony Tabernacle with their spiritual growth, offering access to services and sermons.",
-    image: "https://images.unsplash.com/photo-1515367875270-301d84197552?auto=format&fit=crop&w=800&q=80",
+    image:  '/images/projects/testimony.png',
     tags: ["Community", "Ministry", "Engagement"],
     categories: ["Website"],
     link: "https://testimonytabernacle.com/",
@@ -307,18 +327,18 @@ export const caseStudies = [
     solution: "Developed a site with seamless access to sermons and interactive community events.",
     impact: "Enhanced member participation and spiritual engagement.",
   },
-  {
-    slug: "anythingafrikan",
-    title: "Anything Afrikan",
-    excerpt: "A platform to empower African artisans through an online marketplace that promotes unique handmade crafts and culture.",
-    image: "https://images.unsplash.com/photo-1531321693991-80c4e8b62f6b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDQ5fHxmb3J0aGVhY3Z8ZW58MHx8fHwxNjYwNzQ2MzEw&ixid=rb-1.2.1&q=80&w=1080",
-    tags: ["E-commerce", "Crafts", "African Culture"],
-    categories: ["E-commerce"],
-    link: "https://anythingafrikan.online/",
-    problem: "Artisans lacked an accessible online marketplace to showcase their products.",
-    solution: "Built a marketplace that allows artisans to showcase and sell their handmade goods.",
-    impact: "Increased sales by 40% and empowered African artisans to reach a broader market."
-  }
+  // {
+  //   slug: "anythingafrikan",
+  //   title: "Anything Afrikan",
+  //   excerpt: "A platform to empower African artisans through an online marketplace that promotes unique handmade crafts and culture.",
+  //   image: "https://images.unsplash.com/photo-1531321693991-80c4e8b62f6b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDQ5fHxmb3J0aGVhY3Z8ZW58MHx8fHwxNjYwNzQ2MzEw&ixid=rb-1.2.1&q=80&w=1080",
+  //   tags: ["E-commerce", "Crafts", "African Culture"],
+  //   categories: ["E-commerce"],
+  //   link: "https://anythingafrikan.online/",
+  //   problem: "Artisans lacked an accessible online marketplace to showcase their products.",
+  //   solution: "Built a marketplace that allows artisans to showcase and sell their handmade goods.",
+  //   impact: "Increased sales by 40% and empowered African artisans to reach a broader market."
+  // }
 ];
 
 

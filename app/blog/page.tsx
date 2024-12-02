@@ -69,9 +69,7 @@ export default function Blog() {
                   className="relative w-full h-96 overflow-hidden rounded-lg flex flex-col"
                 >
                   <Image
-                    src={
-                      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80"
-                    }
+                    src={post.image}
                     // src={post.image}
                     alt={post.title}
                     layout="fill"

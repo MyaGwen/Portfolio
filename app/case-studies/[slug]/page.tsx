@@ -8,6 +8,7 @@ import { caseStudies } from "@/lib/data";
 import { ArrowLeftIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CaseStudies() {
   const { slug } = useParams();
@@ -51,6 +52,10 @@ export default function CaseStudies() {
           <Card>
             <CardContent className="p-6">
               <div className="space-y-6">
+                <div>
+                  <h2 className="text-2xl font-bold mb-2">Problem</h2>
+                  <Link href={project.link}>view</Link>
+                </div>
                 <div>
                   <h2 className="text-2xl font-bold mb-2">Problem</h2>
                   <p>{project.problem}</p>
