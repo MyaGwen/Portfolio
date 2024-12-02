@@ -110,7 +110,7 @@ export function Footer() {
               <Separator />
               <div className="flex flex-col py-8 md:flex-row  mx-auto gap-6 justify-between items-center">
                 <p>
-                  © {new Date().getFullYear()} Wendy Edem Ahadome ——{" "}
+                  © {new Date().getFullYear()} Wendy Edem Ahadome —{" "}
                   <span className="text-foreground italic">
                     {currentTime} GMT
                   </span>
