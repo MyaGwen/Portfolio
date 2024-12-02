@@ -1,16 +1,3 @@
-// import BlogPost from "@/components/blog/blog-post";
-// import { posts } from "@/lib/blog-data";
-
-// export async function generateStaticParams() {
-//   return Object.keys(posts).map((id) => ({
-//     id,
-//   }));
-// }
-
-// export default function BlogPostPage({ params }: { params: { id: string } }) {
-//   return <BlogPost id={params.id} />;
-// }
-
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
@@ -76,6 +63,24 @@ export default function BlogPost() {
                 <div key={index} className="space-y-4">
                   <h2 className="text-2xl font-bold mb-2">{section.heading}</h2>
                   <p className="text-gray-700">{section.text}</p>
+                  <div className="flex">
+                    {section.media && (
+                      <div>
+                        <Image
+                          src={section.media.url}
+                          alt={section.media.alt}
+                          width={800}
+                          height={200}
+                          style={{ maxWidth: "100%" }}
+                        />
+                        {section.media.caption && (
+                          <p style={{ fontStyle: "italic" }}>
+                            {section.media.caption}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </CardContent>
