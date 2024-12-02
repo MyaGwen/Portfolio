@@ -63,15 +63,56 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    console.log(values);
-    // form.reset();
-  }
+  // function onSubmit(values: z.infer<typeof formSchema>) {
+  //   toast({
+  //     title: "Message sent!",
+  //     description: "Thank you for reaching out. I'll get back to you soon.",
+  //   });
+  //   console.log(values);
+  //   // form.reset();
+  // }
 
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("https://formspree.io/f/xknlnloe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values), // Send the form data
+      });
+  
+      if (!response.ok) {
+        console.error(`Error: ${response.statusText}`);
+        throw new Error(`Failed to submit: ${response.status}`);
+      }
+  
+      // Parse response if required
+      const result = await response.json();
+  
+      // Show success toast
+      toast({
+        title: "Message sent!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+  
+      console.log("Form submitted successfully:", result);
+  
+      // Reset the form (if using React Hook Form)
+      form.reset();
+    } catch (error) {
+      console.error("Error during form submission:", error);
+  
+      // Show error toast
+      toast({
+        title: "Submission failed",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    }
+  }
+  
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
