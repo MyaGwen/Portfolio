@@ -171,7 +171,7 @@ export const blogPosts = [
         },
       },
     ],
-    image: "https://images.unsplash.com/photo-1523475472561-1051dd6b02e2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHVpJTIwbGlnaHQlMjBhbmQlMjBkYXJrJTIwbW9kZXxlbnwwfHx8fDE2NjA3NDE2MTQ&ixlib=rb-1.2.1&q=80&w=1080",
+    image: "/images/blog/dark.webp",
   },
   
   // {
