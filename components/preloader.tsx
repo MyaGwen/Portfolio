@@ -8,11 +8,11 @@ const greetings = [
   "Bonjour",
   "Hola",
   "Ciao",
-  "Olá",
-  "Hallo",
-  "やあ",
-  "Hallå",
-  "Guten tag",
+  // "Olá",
+  // "Hallo",
+  // "やあ",
+  // "Hallå",
+  // "Guten tag",
   "Akwaaba",
 ];
 

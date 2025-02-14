@@ -51,7 +51,7 @@ export function AboutSection() {
           <Image
             src={AboutMe}
             alt="About me"
-            className="rounded-lg shadow-lg max-w-xs md:max-w-full"
+            className="max-w-xs md:max-w-full"
           />
         </div>
       </motion.div>

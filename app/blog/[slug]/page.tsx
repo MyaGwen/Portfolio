@@ -1,18 +1,16 @@
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { blogPosts } from "@/lib/data";
-import { ArrowLeftIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import Back from "@/components/Back";
 
 export default function BlogPost() {
   const { slug } = useParams();
   const post = blogPosts.find((post) => post.slug === slug);
-  const router = useRouter();
 
   if (!post) {
     return <div>Post not found</div>;
@@ -21,13 +19,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Button
-          onClick={() => router.back()}
-          className="inline-flex items-center bg-0 hover:bg-0 text-muted-foreground hover:text-foreground mb-8"
-        >
-          <ArrowLeftIcon className="w-4 h-4 mr-2" />
-          Back
-        </Button>
+        <Back />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,11 +64,9 @@ export default function BlogPost() {
                           width={800}
                           height={100}
                           className="w-full h-96 object-contain rounded-lg mb-6"
-                          />
+                        />
                         {section.media.caption && (
-                          <p className="italic mt-2">
-                            {section.media.caption}
-                          </p>
+                          <p className="italic mt-2">{section.media.caption}</p>
                         )}
                       </div>
                     )}

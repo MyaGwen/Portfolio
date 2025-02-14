@@ -5,6 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { PhoneCallIcon } from "lucide-react";
 import {
   Form,
   FormControl,
@@ -81,28 +83,28 @@ export default function Contact() {
         },
         body: JSON.stringify(values), // Send the form data
       });
-  
+
       if (!response.ok) {
         console.error(`Error: ${response.statusText}`);
         throw new Error(`Failed to submit: ${response.status}`);
       }
-  
+
       // Parse response if required
       const result = await response.json();
-  
+
       // Show success toast
       toast({
         title: "Message sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
-  
+
       console.log("Form submitted successfully:", result);
-  
+
       // Reset the form (if using React Hook Form)
       form.reset();
     } catch (error) {
       console.error("Error during form submission:", error);
-  
+
       // Show error toast
       toast({
         title: "Submission failed",
@@ -111,8 +113,7 @@ export default function Contact() {
       });
     }
   }
-  
-  
+
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -222,6 +223,18 @@ export default function Contact() {
                 Available for remote work worldwide
               </p>
             </div>
+
+            <Link
+              className="block"
+              href="https://calendly.com/wendyyahadome/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="rounded-full group flex justify-center items-center gap-2 bg-primary px-6 py-3">
+                <PhoneCallIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+                Book a call
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

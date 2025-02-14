@@ -24,22 +24,22 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: GithubIcon,
-    url: "https://github.com/yourusername",
+    url: "https://github.com/myagwen",
   },
   {
     name: "LinkedIn",
     icon: LinkedinIcon,
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://linkedin.com/in/wendy-ahadome",
   },
   {
     name: "Twitter",
     icon: TwitterIcon,
-    url: "https://twitter.com/yourusername",
+    url: "https://twitter.com/mya_gwen",
   },
   {
     name: "Instagram",
     icon: InstagramIcon,
-    url: "https://instagram.com/yourusername",
+    url: "https://instagram.com/mya.gwen",
   },
 ];
 
@@ -49,7 +49,7 @@ export function Footer() {
   return (
     <div>
       {pathname === "/contact" ? (
-        <div className="flex flex-col">
+        <div className="flex flex-col px-4">
           <Separator />
           <div className="container mx-auto">
             <div className="flex flex-col py-8 md:flex-row  mx-auto gap-6 justify-between items-center">
@@ -79,7 +79,7 @@ export function Footer() {
           </div>
         </div>
       ) : (
-        <div className="space-y-20">
+        <div className="space-y-20 px-4">
           <Separator />
           <div className="px-4 lg:max-w-6xl mx-auto">
             <h1 className="text-xl text-center md:text-4xl font-semibold">
@@ -88,7 +88,7 @@ export function Footer() {
             <div className="pt-10 px-4 flex items-center justify-center gap-8">
               <Link
                 className="block"
-                href="https://calendly.com/wendyyahadome/15min"
+                href="https://calendly.com/wendyyahadome/30min"
                 target="_blank"
                 rel="noopener noreferrer"
               >

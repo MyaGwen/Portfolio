@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { BriefcaseIcon, GraduationCapIcon } from "lucide-react";
-// import { Button } from "@/components/ui/button";
 
 const experience = [
   {
@@ -12,13 +11,11 @@ const experience = [
     company: "Huvacliq Technologies",
     period: "July 2023 – Present",
     description: [
-      "Developed and customized responsive websites using WordPress, React, and Next.js.",
-      "Implemented plugins, APIs, and custom code for enhanced dynamic and interactive user experiences.",
-      "Collaborated with UX/UI designers to create visually appealing web pages from design mockups.",
-      "Optimized websites for speed and performance using techniques like code minification and image optimization.",
-      "Maintained and updated websites, troubleshooting issues and applying security updates.",
-      "Integrated CMS and third-party services for efficient content updates.",
-      "Tested and debugged websites for consistency across browsers and devices.",
+      "Developed and maintained interactive, responsive web applications using Next.js, React, and WordPress, ensuring optimal performance and user experience.",
+      "Enhanced website load times by 40% through asset optimization, lazy loading, and performance best practices.",
+      "Built and integrated custom APIs and authentication systems, improving security and accessibility.",
+      "Ensured cross-browser compatibility and mobile responsiveness for a seamless user experience.",
+      "Automated content updates using CMS integrations, enhancing site management efficiency.",
     ],
   },
   {
@@ -26,19 +23,20 @@ const experience = [
     company: "Stutern (Remote)",
     period: "May 2023 – September 2023",
     description: [
-      "Constructed UI components and pages, including landing, authentication, blog, and dashboard.",
-      "Integrated data and APIs to fetch and display information on the frontend.",
-      "Collaborated with the design team to understand and implement project requirements.",
+      "Constructed UI components and pages including the landing, authentication, blog, and dashboard in alignment with the design library documented on Figma.",
+      "Implemented robust user authentication features in a loan web app, reducing login errors by 30% and enhancing overall user satisfaction.",
+      "Integrated APIs to fetch and display real-time data, improving user experience and accessibility.",
+      "Partnered with a cross-functional team to deliver multiple features and enhancements, leading to a 40% improvement in user engagement.",
     ],
   },
   {
-    title: "WordPress Developer",
+    title: "WordPress Designer Intern",
     company: "Huvacliq Technologies",
-    period: "October 2018 – December 2022",
+    period: "Oct 2020 - January 2022",
     description: [
-      "Designed and developed custom WordPress themes and plugins.",
-      "Enhanced site performance and SEO using strategies like caching and code minification.",
-      "Worked closely with clients to gather requirements and provide ongoing technical support.",
+      "Designed and customized WordPress websites, implementing custom themes and plugins.",
+      "Enhanced SEO performance and site speed using caching, image optimization, and best coding practices.",
+      "Provided technical support and maintenance, ensuring long-term website functionality.",
     ],
   },
 ];
@@ -47,16 +45,16 @@ const education = [
   {
     degree: "Bachelor of Arts in Political Science",
     school: "University of Ghana, Legon",
-    period: "September 2016 – July 2020",
+    period: "September 2016 - July 2020",
     major: "Political Science and Information Studies",
   },
   {
     degree: "Certificate in Frontend Engineering (Bootcamp)",
     school: "Stutern (Remote)",
-    period: "September 2022 – September 2023",
+    period: "September 2022 - September 2023",
   },
   {
-    degree: "AWS Cloud Practicioner",
+    degree: "Certified AWS Cloud Practitioner",
     school: "Amalitech Ghana",
     period: "June 2024",
   },
@@ -67,14 +65,20 @@ const skills = [
   "React",
   "Next.js",
   "TypeScript",
-  "HTML5",
-  "CSS3",
   "Tailwind CSS",
-  'AWS Services',
   "WordPress",
+  "Supabase",
+  "Firebase",
+  "AWS Services",
   "Git Version Control",
-  "Responsive Design",
   "REST APIs",
+  "UI/UX Design",
+  "Performance Optimization",
+  "Responsive Web Design",
+  "Problem-solving",
+  "Teamwork",
+  "Communication",
+  "Attention to Detail",
 ];
 
 const references = [
@@ -198,7 +202,9 @@ export default function Resume() {
                 <Card key={index}>
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold mb-1">{ref.name}</h3>
-                    <p>{ref.position} at {ref.company}</p>
+                    <p>
+                      {ref.position} at {ref.company}
+                    </p>
                     {ref.email && <p>Email: {ref.email}</p>}
                     {ref.phone && <p>Phone: {ref.phone}</p>}
                   </CardContent>

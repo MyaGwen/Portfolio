@@ -1,32 +1,25 @@
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { caseStudies } from "@/lib/data";
-import { ArrowLeftIcon, ExternalLinkIcon } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Back from "@/components/Back";
 
 export default function CaseStudies() {
   const { slug } = useParams();
   const project = caseStudies.find((post) => post.slug === slug);
-  const router = useRouter();
 
   if (!project) return <div>Project not found</div>;
 
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Button
-          onClick={() => router.back()}
-          className="inline-flex items-center bg-0 hover:bg-0 text-muted-foreground hover:text-foreground mb-8"
-        >
-          <ArrowLeftIcon className="w-4 h-4 mr-2" />
-          Back
-        </Button>
+        <Back />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
