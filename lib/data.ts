@@ -1,20 +1,24 @@
 export interface BlogPost {
-    slug: string;
-    title: string;
-    date: string;
-    readTime: string;
-    author: string;
-    content: {
-      heading: string;
-      text: string;
-    }[];
-    tags: string[];
-  }
+  slug: string;
+  title: string;
+  date: string;
+  readTime: string;
+  author: string;
+  content: {
+    heading: string;
+    text: string;
+  }[];
+  tags: string[];
+}
 
-
-  export const blogCategories = ["All", "Technology", "Web Development", "Frontend","Humor"];
-  // export const blogCategories = ["All", "Technology", "Web Development", "Frontend", "CSS", "UI Design", "Humor", "Productivity", "Trends"];
-
+export const blogCategories = [
+  "All",
+  "Technology",
+  "Web Development",
+  "Frontend",
+  "Humor",
+];
+// export const blogCategories = ["All", "Technology", "Web Development", "Frontend", "CSS", "UI Design", "Humor", "Productivity", "Trends"];
 
 export const blogPosts = [
   {
@@ -73,64 +77,66 @@ export const blogPosts = [
         media: {
           type: "gif",
           url: "/images/memes/celebrate.gif",
-                    alt: "A happy developer celebrating success",
+          alt: "A happy developer celebrating success",
           caption: "Deployment successful: Time to celebrate!",
         },
       },
     ],
-    image:  '/images/blog/blog1.avif'
-  }
-,  
-{
-  slug: "why-your-business-needs-a-frontend-developer",
-  title: "Why Your Business Needs a Frontend Developer: A Case for Pixel-Perfect Design",
-  date: "March 22, 2024",
-  readTime: "5 min read",
-  author: "Wendy Edem Ahadome",
-  categories: ["Technology", "Business", "Frontend", "Web Development"],
-  tags: ["Frontend", "Business Growth", "Web Design"],
-  content: [
-    {
-      heading: "Introduction",
-      text: "A frontend developer isn’t just someone who makes things look good—they ensure your website feels good too. Think of them as the digital architects who make your business's virtual home inviting, functional, and accessible.",
-      media: {
-        type: "image",
-        url: "/images/memes/yes.gif",
-        alt: "Frontend developer working on a laptop",
-        caption: "When your website's 'handshake' feels like a confident grip, not a limp fish.",
+    image: "/images/blog/blog1.avif",
+  },
+  {
+    slug: "why-your-business-needs-a-frontend-developer",
+    title:
+      "Why Your Business Needs a Frontend Developer: A Case for Pixel-Perfect Design",
+    date: "March 22, 2024",
+    readTime: "5 min read",
+    author: "Wendy Edem Ahadome",
+    categories: ["Technology", "Business", "Frontend", "Web Development"],
+    tags: ["Frontend", "Business Growth", "Web Design"],
+    content: [
+      {
+        heading: "Introduction",
+        text: "A frontend developer isn’t just someone who makes things look good—they ensure your website feels good too. Think of them as the digital architects who make your business's virtual home inviting, functional, and accessible.",
+        media: {
+          type: "image",
+          url: "/images/memes/yes.gif",
+          alt: "Frontend developer working on a laptop",
+          caption:
+            "When your website's 'handshake' feels like a confident grip, not a limp fish.",
+        },
       },
-    },
-    {
-      heading: "The Magic of the Frontend",
-      text: "Frontend developers bring life to static mockups with animations, responsiveness, and interactivity. They don’t just code; they tell stories that connect your brand to your audience.",
-    },
-    {
-      heading: "Business Impact",
-      text: "Without a polished frontend, even the best backend features can go unnoticed. Accessibility, first impressions, and trust are all tied to design quality.",
-      media: {
-        type: "image",
-        url: "/images/memes/find.gif",
-        alt: "When you finally find the perfect frontend developer.",
-        caption: "Great product, terrible storefront. Don’t let this be your website.",
+      {
+        heading: "The Magic of the Frontend",
+        text: "Frontend developers bring life to static mockups with animations, responsiveness, and interactivity. They don’t just code; they tell stories that connect your brand to your audience.",
       },
-    },
-    {
-      heading: "Frontend and Business Growth",
-      text: "A frontend developer optimizes your site for speed, SEO, and user experience, ensuring your business thrives online. A one-second delay in load time could reduce conversions by 7%.",
-      media: {
-        type: "image",
-        url: "/images/memes/cheers.gif",
-        alt: "When your website loads fast and conversions skyrocket",
-        caption: "Fast websites make happy users and better business.",
+      {
+        heading: "Business Impact",
+        text: "Without a polished frontend, even the best backend features can go unnoticed. Accessibility, first impressions, and trust are all tied to design quality.",
+        media: {
+          type: "image",
+          url: "/images/memes/find.gif",
+          alt: "When you finally find the perfect frontend developer.",
+          caption:
+            "Great product, terrible storefront. Don’t let this be your website.",
+        },
       },
-    },
-    {
-      heading: "Conclusion",
-      text: "In today’s digital-first world, a frontend developer is essential. They transform your business goals into engaging, accessible, and impactful digital experiences. Don’t just settle for a website—invest in a frontend developer who ensures your site wows users from the first click.",
-    },
-  ],
-  image: "/images/blog/blog2.avif",
-},
+      {
+        heading: "Frontend and Business Growth",
+        text: "A frontend developer optimizes your site for speed, SEO, and user experience, ensuring your business thrives online. A one-second delay in load time could reduce conversions by 7%.",
+        media: {
+          type: "image",
+          url: "/images/memes/cheers.gif",
+          alt: "When your website loads fast and conversions skyrocket",
+          caption: "Fast websites make happy users and better business.",
+        },
+      },
+      {
+        heading: "Conclusion",
+        text: "In today’s digital-first world, a frontend developer is essential. They transform your business goals into engaging, accessible, and impactful digital experiences. Don’t just settle for a website—invest in a frontend developer who ensures your site wows users from the first click.",
+      },
+    ],
+    image: "/images/blog/blog2.avif",
+  },
   {
     slug: "dark-mode-or-light-mode",
     title: "Dark Mode or Light Mode? The Eternal Struggle",
@@ -147,7 +153,8 @@ export const blogPosts = [
           type: "image",
           url: "/images/memes/dark.webp",
           alt: "Dark and light mode settings on a smartphone",
-          caption: "Because choosing between Dark Mode and Light Mode is the real personality test.",
+          caption:
+            "Because choosing between Dark Mode and Light Mode is the real personality test.",
         },
       },
       {
@@ -167,13 +174,14 @@ export const blogPosts = [
           type: "gif",
           url: "/images/memes/hs.webp",
           alt: "A person flipping a light switch repeatedly",
-          caption: "Dark Mode at night: Perfect. Light Mode at night: Betrayal.",
+          caption:
+            "Dark Mode at night: Perfect. Light Mode at night: Betrayal.",
         },
       },
     ],
     image: "/images/blog/dark.webp",
   },
-  
+
   // {
   //   slug: "css-vs-jollof",
   //   title: "CSS vs. Jollof: The Battle for Perfection",
@@ -248,99 +256,88 @@ export const blogPosts = [
   // },
 ];
 
-export const projectCategories = ["All", "Dashboard", "E-Commerce", "Website"];
+// export const projectCategories = ["All", "Dashboard", "E-Commerce", "Website"];
+export const projectCategories = ["All", "Website", "Web App"];
 
 // Case Studies Data
 export const caseStudies = [
   {
+    id: "ultimate-pixels",
+    title: "Ultimate Pixels - Photography Portfolio",
+    description:
+      "A sleek photography portfolio designed to showcase high-quality images in a professional and engaging manner.",
+    excerpt:
+      "A modern portfolio for photographers to display high-resolution images and attract clients.",
+    tags: ["Next.js", "Photography", "Portfolio"],
+    categories: ["Website"],
+    image: "/images/projects/photography.webp",
+    link: "https://photography-gh.vercel.app/",
+    slug: "ultimate-pixels",
+    problem:
+      "Photographers struggle to showcase their work professionally, and social media compresses images, reducing quality.",
+    solution:
+      "Built a high-performance portfolio with Next.js that allows photographers to display high-resolution images, categorize work, and attract clients.",
+    impact:
+      "Improved online presence and client engagement, helping photographers secure more bookings and showcase their work professionally.",
+  },
+  {
+    id: "2k-construction",
+    title: "2K Construction - Company Website",
+    description:
+      "A professional website for a construction company to showcase services, completed projects, and contact options.",
+    excerpt:
+      "A modern website for 2K Construction, helping them attract clients and establish a strong online presence.",
+    tags: ["Wordpress", "Construction", "Business"],
+    categories: ["Website"],
+    image: "/images/projects/2k.webp",
+    link: "https://2kconstruction.com.gh/",
+    slug: "2k-construction",
+    problem:
+      "Construction companies often lack an online presence, making it difficult for clients to explore services and past projects.",
+    solution:
+      "Developed an SEO-optimized website with service listings, project galleries, and contact options for easy client engagement.",
+    impact:
+      "Improved credibility, increased client inquiries, and strengthened the company’s digital footprint, leading to business growth.",
+  },
+  {
+    id: "frontend-arena",
+    title: "Frontend Arena - Developer Quiz Platform",
+    description:
+      "An interactive quiz platform designed to help frontend developers test and improve their skills.",
+    excerpt:
+      "Frontend Arena is a quiz platform for developers to enhance their HTML, CSS, and JavaScript knowledge.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Education"],
+    categories: ["Web App"],
+    image: "/images/projects/frontendarena.webp",
+    link: "https://thefrontendarena.vercel.app/",
+    slug: "frontend-arena",
+    problem:
+      "Aspiring frontend developers lack an engaging way to test their knowledge and track progress.",
+    solution:
+      "Developed an interactive quiz platform with real-time feedback, covering key frontend topics like HTML, CSS, JavaScript, and React.",
+    impact:
+      "Enhanced learning experience, helping developers build confidence and prepare for technical interviews.",
+  },
+  {
     id: "be-a-solution",
     title: "Be A Solution - Empowering Communities",
-    description: "A web platform designed to empower and educate communities about sustainable solutions, offering educational articles, tutorials, and a forum for growth.",
-    excerpt: "Be A Solution is a platform providing accessible resources for community children education.",
-    tags: ['Next Js',"Non-Profit", "Community"],
+    description:
+      "A web platform providing educational content and resources to help communities grow and develop sustainably.",
+    excerpt:
+      "Be A Solution offers tools and knowledge to empower individuals and drive community growth.",
+    tags: ["Next.js", "Non-Profit", "Community"],
     categories: ["Website"],
-    image: '/images/projects/beasolution.png',
-    link: "https://be-a-solution-new-nwz5.vercel.app/",
+    image: "/images/projects/ngo.webp",
+    link: "https://beasolution.vercel.app/",
     slug: "be-a-solution",
-    problem: "Many communities lack accessible resources and tools for sustainable development.",
-    solution: "Developed a platform that offers educational content, tools, and a forum to facilitate sustainable growth in various communities.",
-    impact: "Increased user engagement by 40% and provided tools that helped empower local communities to create meaningful changes.",
+    problem:
+      "Many communities lack accessible educational resources for personal and sustainable development.",
+    solution:
+      "Created a platform offering educational content, tutorials, and a forum to facilitate knowledge-sharing and growth.",
+    impact:
+      "Increased access to valuable resources, enabling individuals and communities to make informed, impactful decisions.",
   },
-  {
-    slug: "cfh-ghamfin",
-    title: "Credit Facility Hub - Ghamfin",
-    excerpt: "Streamlining access to credit services for Ghanaians with a user-friendly platform, helping manage financial needs with ease.",
-    image:  '/images/projects/ghamfin.png',
-    tags: ["Financial Services"],
-    categories: ["Dashboard", "Website"],
-    link: "https://cfh.ghamfin.org/",
-    problem: "Existing platforms lacked accessibility for Ghanaians to credit services.",
-    solution: "Built a responsive web application focusing on user-friendly interfaces.",
-    impact: "Enhanced user engagement by 60% and improved accessibility to credit services.",
-  },
-  {
-    slug: "abidee-canada",
-    title: "Abidee Canada",
-    excerpt: "A vibrant platform for showcasing immigration services tailored for Canadians, providing resources for newcomers.",
-    image:  '/images/projects/abideecanada.png',
-    tags: ["WordPress", "CMS", "Immigration"],
-    categories: ["E-Commerce", "Website"],
-    link: "https://abideecanada.com/",
-    problem: "Immigration platforms lacked engaging designs and dynamic content management.",
-    solution: "Created a visually appealing, easy-to-update website with robust CMS integration.",
-    impact: "Increased service bookings by 25% and boosted user engagement.",
-  },
-  {
-    slug: "jesus-centered-church",
-    title: "Jesus Centered Church",
-    excerpt: "Connecting congregants with sermons and events through a spiritual digital platform that promotes spiritual growth.",
-    image:  '/images/projects/jesuscenteredchurch.png',
-    // image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
-    tags: ["Community Engagement", "WordPress", "UI Design"],
-    categories: ["Website"],
-    link: "https://jesuscenteredchurch.com/",
-    problem: "Church websites lacked modern designs to engage online communities.",
-    solution: "Developed a functional site with features like sermon uploads and event management.",
-    impact: "Improved online engagement by 50% and fostered a connected community.",
-  },
-  {
-    slug: "bright-martey",
-    title: "Bright Martey Portfolio",
-    excerpt: "A portfolio site showcasing creative career achievements with stunning visuals, highlighting design and web development skills.",
-    image:  '/images/projects/brightmartey.png',
-    tags: ["Portfolio", "Personal Branding", "Web Design"],
-    categories: ["Website"],
-    link: "https://brightmartey.com/",
-    problem: "Creative professionals needed an interactive platform for their career highlights.",
-    solution: "Designed a sleek portfolio site with emphasis on storytelling and visuals.",
-    impact: "Enhanced personal branding and opened new professional opportunities.",
-  },
-  {
-    slug: "testimony-tabernacle",
-    title: "Testimony Tabernacle",
-    excerpt: "A platform to connect members of Testimony Tabernacle with their spiritual growth, offering access to services and sermons.",
-    image:  '/images/projects/testimony.png',
-    tags: ["Community", "Ministry", "Engagement"],
-    categories: ["Website"],
-    link: "https://testimonytabernacle.com/",
-    problem: "Lacked online features to connect members for events and sermons.",
-    solution: "Developed a site with seamless access to sermons and interactive community events.",
-    impact: "Enhanced member participation and spiritual engagement.",
-  },
-  // {
-  //   slug: "anythingafrikan",
-  //   title: "Anything Afrikan",
-  //   excerpt: "A platform to empower African artisans through an online marketplace that promotes unique handmade crafts and culture.",
-  //   image: "https://images.unsplash.com/photo-1531321693991-80c4e8b62f6b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDQ5fHxmb3J0aGVhY3Z8ZW58MHx8fHwxNjYwNzQ2MzEw&ixid=rb-1.2.1&q=80&w=1080",
-  //   tags: ["E-commerce", "Crafts", "African Culture"],
-  //   categories: ["E-commerce"],
-  //   link: "https://anythingafrikan.online/",
-  //   problem: "Artisans lacked an accessible online marketplace to showcase their products.",
-  //   solution: "Built a marketplace that allows artisans to showcase and sell their handmade goods.",
-  //   impact: "Increased sales by 40% and empowered African artisans to reach a broader market."
-  // }
 ];
-
 
 // Featured Projects for the Home Page
 export const featuredProjects = caseStudies.slice(0, 3);
@@ -349,8 +346,6 @@ export const featuredProjects = caseStudies.slice(0, 3);
 export const getCaseStudyBySlug = (slug: string) => {
   return caseStudies.find((project) => project.slug === slug);
 };
-
-
 
 //   function generateSlug(title: string): string {
 //     return title
@@ -362,8 +357,7 @@ export const getCaseStudyBySlug = (slug: string) => {
 //   blogPosts.forEach(post => {
 //     post.slug = generateSlug(post.title);
 //   });
-  
-  
+
 // const articles = [
 //   {
 //     title: "The Future of Frontend Development",
